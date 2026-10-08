@@ -1,11 +1,10 @@
 # Título Proyecto
 
-## Miembros del grupo LX-XXX-X (sustituir)
+## Miembros del grupo L3-ABS-8
 
 1. Béjar Montilla, Adrián
-1. Apellidos, Nombre
-1. Apellidos, Nombre
-1. Apellidos, Nombre
+1. Ayala Cabrera, Guillermo
+1. del Río Serrano, Miguel Ángel
 
 ## 1. Introducción al problema
 
