@@ -1,4 +1,4 @@
-# Título Proyecto
+# VISOSPORT
 
 ## Miembros del grupo L3-ABS-8
 
@@ -8,21 +8,33 @@
 
 ## 1. Introducción al problema
 
-- VISOSPORT es un centro deportivo privado. Cuenta con múltiples instalaciones en las que se realizan diferentes actividades deportivas (pero que a su vez los usuarios pueden usar libremente):
+### 1.1. Contexto
+- VISOSPORT es un centro deportivo privado situado en El Viso del Alcor. Cuenta con múltiples instalaciones en las que se imparten diferentes actividades deportivas dirigidas:
   1. Sala de musculación - Entrenamiento Personal
   2. Piscina y piscina de relajación - Clases de natación y Aquagym
   3. Sala multifuncional (2) - Zumba y Yoga
   4. Pistas de pádel (4) - Clases de pádel (ofrece también la posibilidad de reservar una pista)
   5. Sala de Cardio - Spinning
   6. Sala de Hyrox - Hyrox
- 
-A día de hoy, la gestión el centro deportivo VISOSPORT se hace de forma manual con herramientas como hojas de cálculo, mensajería instantánea o directamente en papel. Esto provoca errores de coordinación, solapamiento de horarios, falta de personal. 
+Cada instalación tiene un aforo máximo. Fuera de las actividades dirigidas, los socios pueden usar libremente las instalaciones, aunque este uso libre no lo gestiona el sistema, salvo la reserva de las pistas de pádel. 
 
-Es por eso que los dirigentes de VISOSPORT se han puesto el objetivo de optimizar su administración para sacarle el máximo partido a sus instalaciones, mediante la centralización de los datos del centro, la coordinación de sus trabajadores y la facilitación de la información a los clientes.
+### 1.2. Situación actual y problemas
+Actualmente la gestión de VISOSPORT se hace de forma manual, con hojas de cálculo, grupos de mensajería instantánea y documentos en papel. La información está dispersa y nadie tiene una visión completa del centro, lo que provoca problemas como estos:
 
-VISOSPORT requiere de un sistema dirigido tanto a usuarios como a trabajadores. Por un lado, que ofrezca una interfaz que permite a los usuarios reservar los servicios que les otorgue su plan:
-  1. Plan bronce: Acceso a todas las instalaciones y actividades, pero con restricción de una actividad por semana
-  2. Plan oro: Acceso a todas las instalaciones y actividades, sin restricción.
+  1. Solapamientos en la planificación: un monitor aparece asignado a dos clases a la misma hora, o una sala tiene programadas dos actividades a la vez.
+  2. Clases sin monitor: al no haber un registro centralizado de asignaciones, a veces se descubre a última hora que una clase no tiene a nadie asignado.
+  3. Aforo sin control: los socios se apuntan a las clases de palabra o por mensaje, así que algunas sesiones superan la capacidad de la sala (por ejemplo, socios que llegan a Spinning y no tienen bicicleta) mientras otras quedan casi vacías.
+  4. Planes que no se respetan: no hay forma práctica de comprobar que un socio con plan bronce no realiza actividades dirigidas.
+  5. Información poco accesible para los socios: para saber el horario, la sala o el monitor de una clase hay que consultar el tablón del centro o preguntar en recepción.
+  6. Rutinas en papel: los entrenadores personales entregan las rutinas en papel o por mensaje, y se pierden o quedan desactualizadas.
+  7. Trámites lentos: las altas y los cambios de plan se gestionan en papel, sin registro de su estado.
+
+### 1.3. Expectativas
+La dirección de VISOSPORT, en calidad de cliente, requiere de un sistema dirigido a todos los usuarios (tanto socios como trabajadores).
+
+Por un lado, que ofrezca a los socios una interfaz que permita reservar los servicios que les otorgue su plan:
+  1. Plan bronce: Acceso a todas las instalaciones.
+  2. Plan oro: Acceso a todas las instalaciones y actividades dirigidas.
   3. Plan platino: Acceso a todas las instalaciones y actividades, con la posibilidad de contar con un entrenador personal.
 
 Por otro lado, que permita a los trabajadores asegurarse de un correcto desempeño de su función, más concretamente:
