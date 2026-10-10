@@ -8,8 +8,28 @@
 
 ## 1. Introducción al problema
 
-- Descripción del problema para poner en contexto el proyecto, incluyendo información sobre los clientes y usuarios, la situación actual, problemas, expectativas, etc. Se valorará la presencia de información multimedia (fotos, gráficos, documentos escaneados, etc.).
+- VISOSPORT es un centro deportivo privado. Cuenta con múltiples instalaciones en las que se realizan diferentes actividades deportivas (pero que a su vez los usuarios pueden usar libremente):
+  1. Sala de musculación - Entrenamiento Personal
+  2. Piscina y piscina de relajación - Clases de natación y Aquagym
+  3. Sala multifuncional (2) - Zumba y Yoga
+  4. Pistas de pádel (4) - Clases de pádel (ofrece también la posibilidad de reservar una pista)
+  5. Sala de Cardio - Spinning
+  6. Sala de Hyrox - Hyrox
+ 
+A día de hoy, la gestión el centro deportivo VISOSPORT se hace de forma manual con herramientas como hojas de cálculo, mensajería instantánea o directamente en papel. Esto provoca errores de coordinación, solapamiento de horarios, falta de personal. 
 
+Es por eso que los dirigentes de VISOSPORT se han puesto el objetivo de optimizar su administración para sacarle el máximo partido a sus instalaciones, mediante la centralización de los datos del centro, la coordinación de sus trabajadores y la facilitación de la información a los clientes.
+
+VISOSPORT requiere de un sistema dirigido tanto a usuarios como a trabajadores. Por un lado, que ofrezca una interfaz que permite a los usuarios reservar los servicios que les otorgue su plan:
+  1. Plan bronce: Acceso a todas las instalaciones y actividades, pero con restricción de una actividad por semana
+  2. Plan oro: Acceso a todas las instalaciones y actividades, sin restricción.
+  3. Plan platino: Acceso a todas las instalaciones y actividades, con la posibilidad de contar con un entrenador personal.
+
+Por otro lado, que permita a los trabajadores asegurarse de un correcto desempeño de su función, más concretamente:
+  1. Administradores: asignan diariamente a cada monitor las actividades que le tocará dirigir, en un horario y una sala determinados. Además, tramitan las solicitudes de alta y cambio de plan para usuarios.
+  2. Monitores: revisan las asignaciones diarias impuestas por los administradores.
+  3. Entrenadores personales: diseñan las rutinas de los usuarios que tengan asignados y se coordinan con ellos para cada entrenamiento.
+     
 ## 2. Glosario de términos
 
 - Términos específicos del dominio del problema, ordenados alfabéticamente. Se valorará la presencia de información multimedia.
