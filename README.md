@@ -48,9 +48,24 @@ Por otro lado, que permita a los trabajadores asegurarse de un correcto desempe�
 
 ## 3. Visión general del sistema
 
+El sistema de información de VISOSPORT centralizará la gestión del centro deportivo: los socios y sus planes, los trabajadores, las instalaciones y las actividades, la planificación de sesiones, las reservas, el alquiler de pistas de pádel y el entrenamiento personal. En este apartado se describen los objetivos generales del sistema y los tipos de usuarios que lo utilizarán, que se detallan después en el catálogo de requisitos.
+
 ### 3.1. Requisitos generales
 
+  1. Como director de VISOSPORT, quiero tener centralizada la información sobre mis trabajadores para saber con qué personal cuento.
+  2. Como administrador, quiero gestionar las solicitudes de alta y cambio de plan de los socios del centro para saber a qué servicios tienen derecho.
+  3. Como administrador, quiero gestionar las instalaciones del centro, teniendo siempre en cuenta su aforo para aprovechar al máximo los espacios disponibles.
+  4. Como administrador, quiero programar las sesiones de cada actividad y asignara cada una un monitor, una sala y un horario para que se den las clases correctamente y evitar solapamientos.
+  5. Como entrenador personal, quiero poder gestionar adecuadamente las rutinas de mis socios asignados así como comunicarme con ellos, para poder estar al tanto de su progreso y concertar las sesiones de entrenamiento.
+  6. Como socio, quiero consultar las sesiones disponibles, así como sus horarios, y poder reservar para asegurarme de que voy a poder disfrutar de las actividades que quiero.
+  7. Como socio, quiero poder reservar telemáticamente pistas de pádel para asegurarme de que no haya ninguna clase en la franja horario que deseo.
+     
 ### 3.2. Usuarios del sistema
+
+  1. Administrador: trabajador encargado de la gestión del centro. Programa las sesiones de las actividades dirigidas, asigna los monitores a cada sesión, gestiona las instalaciones y actividades, y tramita las solicitudes de alta y de cambio de plan de los socios.
+  2. Monitor: trabajador que imparte las actividades dirigidas. Consulta su agenda diaria con las sesiones que tiene asignadas, su horario, la sala y el número de socios apuntados.
+  3. Entrenador personal: trabajador que entrena individualmente a los socios con plan platino que tiene asignados. Diseña y actualiza sus rutinas y programa con ellos las sesiones de entrenamiento personal.
+  4. Socio: cliente de VISOSPORT con un plan contratado. Consulta el horario de sesiones y reserva plaza en ellas, alquila pistas de pádel, solicita cambios de plan y, si tiene plan platino, contrata un entrenador personal y consulta su rutina.
 
 ## 4. Catálogo de requisitos
 
