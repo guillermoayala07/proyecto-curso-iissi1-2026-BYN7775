@@ -4,7 +4,7 @@
 
 1. Béjar Montilla, Adrián
 1. Ayala Cabrera, Guillermo
-1. del Río Serrano, Miguel Ángel
+1. Del Río Serrano, Miguel Ángel
 
 ## 1. Introducción al problema
 
