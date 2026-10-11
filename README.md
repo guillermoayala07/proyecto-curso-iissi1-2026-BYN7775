@@ -110,6 +110,8 @@ El sistema de información de VISOSPORT centralizará la gestión del centro dep
 
 ### 4.1. Requisitos funcionales
 
+> Todos los requisitos funcionales de este entregable son listados y consultas.
+
 #### R.F.01. Consultar sesiones disponibles
 
 Como socio,
@@ -467,6 +469,77 @@ para respetar las condiciones contratadas por cada socio.
 - Se asigna un entrenador personal a un socio con plan platino y no se recibe ningún mensaje de error.
 - Se intenta asignar un entrenador personal a un socio con plan bronce u oro y se recibe un mensaje de error.
 - Se intenta cambiar a un plan distinto de platino a un socio que tiene entrenador personal asignado y se recibe un mensaje de error.
+
+---
+
+### 4.2. Mapa de historias de usuario
+
+Los requisitos generales (objetivos, o historias épicas) organizan jerárquicamente el resto de requisitos. Cada fila del mapa es un objetivo y detalla los requisitos de información, reglas de negocio y requisitos funcionales que lo concretan.
+
+| Objetivo (requisito general) | Requisitos de información | Reglas de negocio | Requisitos funcionales |
+|---|---|---|---|
+| **RG-1.** Centralizar la información de los trabajadores | R.I.03 Trabajadores | | R.F.09 Listado de trabajadores |
+| **RG-2.** Gestionar las solicitudes de alta y cambio de plan | R.I.01 Socios<br>R.I.02 Planes<br>R.I.11 Solicitudes de alta y cambio de plan | R.N.02 Compatibilidad entre plan y actividad<br>R.N.07 Entrenador personal solo para el plan platino | R.F.10 Listado de solicitudes pendientes |
+| **RG-3.** Gestionar las instalaciones teniendo en cuenta su aforo | R.I.04 Instalaciones | R.N.01 Límite de plazas por sesión | R.F.03 Consultar la ocupación de una instalación |
+| **RG-4.** Programar las sesiones, con monitor, sala y horario, evitando solapamientos | R.I.05 Actividades dirigidas<br>R.I.06 Sesiones | R.N.03 No solapamiento de sesiones en una instalación<br>R.N.04 No solapamiento de sesiones de un monitor | R.F.03 Consultar la ocupación de una instalación<br>R.F.04 Listado de sesiones sin monitor<br>R.F.05 Listado de socios con reserva en una sesión<br>R.F.06 Consultar mi agenda diaria |
+| **RG-5.** Gestionar las rutinas de los socios asignados a un entrenador personal | R.I.09 Entrenador personal asignado<br>R.I.10 Rutinas | R.N.07 Entrenador personal solo para el plan platino | R.F.07 Consultar mi rutina<br>R.F.08 Consultar mis socios asignados |
+| **RG-6.** Consultar las sesiones disponibles y reservar plaza | R.I.07 Reservas de plaza | R.N.01 Límite de plazas por sesión<br>R.N.02 Compatibilidad entre plan y actividad<br>R.N.05 Cancelación con antelación mínima | R.F.01 Consultar sesiones disponibles<br>R.F.02 Consultar mis reservas |
+| **RG-7.** Reservar pistas de pádel | R.I.08 Reservas de pista | R.N.06 No solapamiento en las pistas de pádel | R.F.02 Consultar mis reservas<br>R.F.03 Consultar la ocupación de una instalación |
+
+---
+
+### 4.3. Requisitos no funcionales
+
+Describen aspectos de calidad del sistema (compatibilidad, fiabilidad, eficiencia, usabilidad y seguridad, según la clasificación de la norma ISO/IEC 25010).
+
+#### R.N.F.01. Funcionamiento en MariaDB
+
+*Restricción técnica / compatibilidad.*
+
+Como director,
+quiero que el sistema funcione sobre un servidor de bases de datos MariaDB,
+para poder instalarlo en la infraestructura del centro sin cambios.
+
+**Prueba de aceptación**
+
+- Los scripts de creación de tablas, funciones, procedimientos, triggers y poblado se ejecutan en MariaDB, en el orden indicado, sin ningún error.
+
+#### R.N.F.02. Operaciones completas o ninguna
+
+*Fiabilidad.*
+
+Como administrador,
+quiero que las operaciones de reserva y cancelación se realicen por completo o no se realicen en absoluto,
+para que nunca queden datos a medias ni inconsistentes.
+
+**Prueba de aceptación**
+
+- Una reserva de plaza que incumple una regla de negocio no deja ningún dato registrado.
+- Tras cancelar una reserva, la plaza queda liberada en la sesión y la reserva figura como cancelada, sin estados intermedios.
+
+#### R.N.F.03. Mensajes de error comprensibles
+
+*Usabilidad.*
+
+Como administrador,
+quiero que, cuando una operación sea rechazada por incumplir una regla de negocio, el sistema muestre un mensaje que indique el motivo,
+para saber qué debo corregir.
+
+**Prueba de aceptación**
+
+- Cada una de las reglas de negocio R.N.01 a R.N.07, al incumplirse, produce un mensaje de error distinto que identifica la regla incumplida.
+
+#### R.N.F.04. Tiempo de respuesta de las consultas
+
+*Eficiencia.*
+
+Como socio,
+quiero que las consultas de sesiones y de reservas respondan en menos de 2 segundos,
+para no perder tiempo al reservar.
+
+**Prueba de aceptación**
+
+- Con el volumen de datos de un año de actividad del centro (unos 600 socios y varios miles de reservas), las consultas R.F.01 y R.F.02 tardan menos de 2 segundos.
 
 -- fin entregable 1 --
 
