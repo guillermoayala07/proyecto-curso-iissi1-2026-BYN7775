@@ -110,45 +110,363 @@ El sistema de información de VISOSPORT centralizará la gestión del centro dep
 
 ### 4.1. Requisitos funcionales
 
-#### R.F.01. Título requisito funcional
+#### R.F.01. Consultar sesiones disponibles
 
-Como [tipo de usuario]
-quiero [servicio]
-para [razón]
+Como socio,
+quiero consultar las sesiones de actividades dirigidas con su fecha, horario, instalación, monitor y plazas libres,
+para decidir en cuáles quiero reservar plaza.
 
 **Prueba de aceptación**
-- Descripción de la primera comprobación a realizar
-- Descripción de la segunda comprobación a realizar
-- Se debe aplicar la regla de negocio R.N.XX.
-- ...
+
+- Un socio con plan oro o platino consulta las sesiones y obtiene cada una con su fecha, horario, instalación, monitor y número de plazas libres.
+- El número de plazas libres de una sesión es su aforo menos las reservas de plaza activas.
+- Se puede filtrar por actividad y por fecha, y solo se muestran las sesiones futuras.
+- Una sesión sin monitor asignado se muestra indicando que el monitor está pendiente de asignar.
+- Se debe aplicar la regla de negocio R.N.02: un socio con plan bronce no obtiene ninguna sesión, ya que su plan no incluye actividades dirigidas.
+
+#### R.F.02. Consultar mis reservas
+
+Como socio,
+quiero consultar las reservas de plaza en sesiones y las reservas de pista de pádel que tengo realizadas,
+para saber a qué voy a asistir y cuándo.
+
+**Prueba de aceptación**
+
+- Un socio con reservas de plaza y de pista obtiene ambas, con su fecha, horario e instalación, ordenadas por fecha.
+- Un socio sin ninguna reserva obtiene un listado vacío.
+- Un socio solo puede ver sus propias reservas, no las de otros socios.
+
+#### R.F.03. Consultar la ocupación de una instalación
+
+Como administrador,
+quiero consultar el calendario de ocupación de una instalación en un día o rango de fechas, con sus sesiones y sus reservas de pista,
+para planificar nuevas sesiones sin solapamientos.
+
+**Prueba de aceptación**
+
+- Se consulta una instalación y se obtienen sus sesiones y, si es una pista de pádel, sus reservas, ordenadas por fecha y hora de inicio.
+- Una franja horaria sin sesiones ni reservas no aparece como ocupada.
+- Se debe aplicar la regla de negocio R.N.03: en el resultado no aparecen dos sesiones solapadas de una misma instalación.
+- Se debe aplicar la regla de negocio R.N.06: en el resultado de una pista no aparecen reservas solapadas entre sí ni con sesiones.
+
+#### R.F.04. Listado de sesiones sin monitor
+
+Como administrador,
+quiero obtener un listado de las sesiones futuras que todavía no tienen monitor asignado,
+para asignarles un monitor a tiempo y evitar clases sin monitor.
+
+**Prueba de aceptación**
+
+- Se crea una sesión sin monitor y aparece en el listado.
+- Una sesión con monitor asignado no aparece en el listado.
+- Las sesiones ya pasadas no aparecen en el listado.
+- El listado está ordenado de la sesión más próxima a la más lejana.
+
+#### R.F.05. Listado de socios con reserva en una sesión
+
+Como monitor,
+quiero consultar el listado de socios con plaza reservada en una sesión concreta,
+para saber cuántos asistentes tendré y controlar la asistencia.
+
+**Prueba de aceptación**
+
+- Se consulta una sesión con reservas y se obtienen los socios (nombre y apellidos) con reserva activa, junto con el número total de asistentes.
+- Una reserva cancelada no aparece en el listado.
+- Una sesión sin reservas devuelve un listado vacío.
+- Se debe aplicar la regla de negocio R.N.01: el número de socios del listado no supera el aforo de la instalación de la sesión.
+
+#### R.F.06. Consultar mi agenda diaria
+
+Como monitor,
+quiero consultar las sesiones que tengo asignadas en un día, con su horario, instalación y número de socios con reserva,
+para organizar mi jornada.
+
+**Prueba de aceptación**
+
+- Un monitor con varias sesiones asignadas en un día las obtiene ordenadas por hora de inicio.
+- No aparecen las sesiones de otros monitores.
+- Un día sin sesiones asignadas devuelve un listado vacío.
+- Se debe aplicar la regla de negocio R.N.04: en la agenda de un monitor no hay sesiones solapadas.
+
+#### R.F.07. Consultar mi rutina
+
+Como socio con plan platino,
+quiero consultar la rutina de ejercicios que me ha diseñado mi entrenador personal,
+para seguir mi plan de entrenamiento.
+
+**Prueba de aceptación**
+
+- Un socio con plan platino y rutina asignada obtiene la rutina con sus ejercicios (nombre, series y repeticiones) y el nombre de su entrenador.
+- Un socio sin rutina asignada recibe un listado vacío.
+- Si el socio tiene varias rutinas, se obtiene primero la más reciente.
+
+#### R.F.08. Consultar mis socios asignados
+
+Como entrenador personal,
+quiero consultar los socios que tengo asignados junto con su rutina más reciente,
+para saber a quién entreno y qué rutina sigue cada uno.
+
+**Prueba de aceptación**
+
+- Un entrenador con socios asignados obtiene sus nombres y apellidos y la fecha de su rutina más reciente.
+- Un socio asignado que todavía no tiene rutina aparece indicando que no tiene rutina.
+- No aparecen socios asignados a otros entrenadores.
+- Se debe aplicar la regla de negocio R.N.07: todos los socios del listado tienen plan platino.
+
+#### R.F.09. Listado de trabajadores
+
+Como director,
+quiero obtener un listado de los trabajadores del centro, filtrable por tipo (administrador, monitor o entrenador personal),
+para saber con qué personal cuento.
+
+**Prueba de aceptación**
+
+- Sin filtro se obtienen todos los trabajadores con su nombre, tipo, correo y teléfono.
+- Al filtrar por un tipo solo se obtienen los trabajadores de ese tipo.
+- El listado está ordenado alfabéticamente por apellidos.
+
+#### R.F.10. Listado de solicitudes pendientes
+
+Como administrador,
+quiero obtener un listado de las solicitudes de alta y de cambio de plan que están pendientes de tramitar,
+para gestionarlas y que los socios sepan a qué servicios tienen derecho.
+
+**Prueba de aceptación**
+
+- Se obtienen las solicitudes en estado pendiente con su tipo (alta o cambio de plan), solicitante, plan solicitado y fecha.
+- Una solicitud ya tramitada (aprobada o rechazada) no aparece en el listado.
+- El listado está ordenado de la solicitud más antigua a la más reciente.
+
+---
 
 #### 4.1.1. Requisitos de información
 
-##### R.I.01. Título requisito de información
+##### R.I.01. Socios
 
-Como [tipo de usuario]
-quiero [servicio]
-para [razón]
+Como administrador,
+quiero disponer de la siguiente información sobre los socios: DNI, nombre, apellidos, correo electrónico, teléfono, fecha de alta y plan contratado,
+para gestionar a los socios del centro y saber a qué servicios tienen derecho.
 
 **Prueba de aceptación**
-- Descripción de la primera comprobación a realizar
-- Descripción de la segunda comprobación a realizar
-- ...
+
+- Se registra un socio nuevo con todos sus datos y aparece al consultar los socios.
+- Se intenta registrar un socio con un DNI ya registrado y se recibe un mensaje de error.
+- No se permite registrar un socio ni modificarlo dejando sin valor algún dato.
+- Un socio tiene siempre un único plan en un momento dado.
+
+##### R.I.02. Planes
+
+Como administrador,
+quiero disponer de la siguiente información sobre los planes: nombre (bronce, oro o platino), si incluye actividades dirigidas y si incluye entrenador personal,
+para conocer los servicios a los que da derecho cada plan.
+
+**Prueba de aceptación**
+
+- Existen exactamente tres planes: bronce, oro y platino.
+- El plan bronce no incluye actividades dirigidas ni entrenador personal; el plan oro incluye actividades dirigidas pero no entrenador personal; el plan platino incluye ambos.
+- No se permite crear dos planes con el mismo nombre.
+
+##### R.I.03. Trabajadores
+
+Como director,
+quiero disponer de la siguiente información sobre los trabajadores: DNI, nombre, apellidos, correo electrónico, teléfono, fecha de contratación y tipo (administrador, monitor o entrenador personal),
+para tener centralizada la información del personal.
+
+**Prueba de aceptación**
+
+- Se registra un trabajador de cada tipo y aparece al consultar los trabajadores.
+- Se intenta registrar un trabajador con un DNI ya registrado y se recibe un mensaje de error.
+- No se permite registrar un trabajador ni modificarlo dejando sin valor algún dato.
+- Un trabajador tiene un único tipo.
+
+##### R.I.04. Instalaciones
+
+Como administrador,
+quiero disponer de la siguiente información sobre las instalaciones: nombre, tipo (sala de musculación, piscina, piscina de relajación, sala multifuncional, pista de pádel, sala de cardio o sala de Hyrox) y aforo máximo,
+para conocer la capacidad de cada espacio del centro.
+
+**Prueba de aceptación**
+
+- Se registra cada una de las instalaciones del centro y aparecen al consultarlas.
+- No se permite registrar una instalación con aforo menor o igual que cero.
+- No se permite registrar dos instalaciones con el mismo nombre.
+
+##### R.I.05. Actividades dirigidas
+
+Como administrador,
+quiero disponer de la siguiente información sobre las actividades dirigidas: nombre, descripción y tipo de instalación en la que se imparte,
+para programar sesiones de cada actividad en la instalación adecuada.
+
+**Prueba de aceptación**
+
+- Se registra una actividad (por ejemplo, zumba, en sala multifuncional) y aparece al consultar las actividades.
+- No se permite registrar dos actividades con el mismo nombre.
+- No se permite registrar una actividad dejando sin valor algún dato.
+
+##### R.I.06. Sesiones
+
+Como administrador,
+quiero disponer de la siguiente información sobre las sesiones: actividad, instalación, fecha, hora de inicio, hora de fin y, cuando ya se haya asignado, monitor,
+para planificar las clases del centro.
+
+**Prueba de aceptación**
+
+- Se programa una sesión sin monitor y se consulta; después se le asigna un monitor y la consulta lo refleja.
+- No se permite programar una sesión cuya hora de fin sea anterior o igual a su hora de inicio.
+- No se permite asignar a una sesión un trabajador que no sea de tipo monitor.
+- No se permite programar una sesión en una instalación que no sea del tipo en el que se imparte su actividad.
+
+##### R.I.07. Reservas de plaza
+
+Como socio,
+quiero que quede registrada la información de mis reservas de plaza en sesiones: socio, sesión, fecha de la reserva y estado (activa o cancelada),
+para tener asegurada mi plaza en la actividad.
+
+**Prueba de aceptación**
+
+- Se registra una reserva de plaza y aparece al consultar las reservas del socio y las de la sesión.
+- Se intenta registrar una segunda reserva activa del mismo socio en la misma sesión y se recibe un mensaje de error.
+- Una reserva cancelada conserva su registro con el estado cancelada.
+- Se deben aplicar las reglas de negocio R.N.01, R.N.02 y R.N.05.
+
+##### R.I.08. Reservas de pista
+
+Como socio,
+quiero que quede registrada la información de mis reservas de pista de pádel: socio, pista, fecha, hora de inicio y hora de fin,
+para poder jugar en la franja que he elegido.
+
+**Prueba de aceptación**
+
+- Se registra una reserva de pista y aparece al consultar las reservas del socio y las de la pista.
+- No se permite registrar una reserva cuya hora de fin sea anterior o igual a su hora de inicio.
+- No se permite registrar una reserva sobre una instalación que no sea una pista de pádel.
+- Se debe aplicar la regla de negocio R.N.06.
+
+##### R.I.09. Entrenador personal asignado
+
+Como administrador,
+quiero disponer de la información sobre el entrenador personal asignado a cada socio con plan platino: socio, entrenador y fecha de inicio de la asignación,
+para saber qué socios entrena cada entrenador personal.
+
+**Prueba de aceptación**
+
+- Se asigna un entrenador personal a un socio con plan platino y aparece al consultar los socios del entrenador.
+- No se permite asignar como entrenador a un trabajador que no sea de tipo entrenador personal.
+- Un socio tiene como máximo un entrenador personal asignado a la vez.
+- Se debe aplicar la regla de negocio R.N.07.
+
+##### R.I.10. Rutinas
+
+Como entrenador personal,
+quiero disponer de la siguiente información sobre las rutinas de mis socios: socio, entrenador, fecha de creación y, para cada ejercicio, su nombre, número de series y número de repeticiones,
+para planificar el entrenamiento de cada socio y que este pueda consultarlo.
+
+**Prueba de aceptación**
+
+- Se registra una rutina con varios ejercicios para un socio y se consulta con todos sus ejercicios.
+- No se permite registrar un ejercicio con series o repeticiones menores o iguales que cero.
+- No se permite registrar una rutina para un socio que no tiene asignado a ese entrenador personal.
+
+##### R.I.11. Solicitudes de alta y cambio de plan
+
+Como administrador,
+quiero disponer de la siguiente información sobre las solicitudes de alta y de cambio de plan: tipo (alta o cambio de plan), solicitante, plan solicitado, fecha de la solicitud, estado (pendiente, aprobada o rechazada) y administrador que la tramita,
+para llevar un registro del estado de cada trámite.
+
+**Prueba de aceptación**
+
+- Se registra una solicitud nueva y queda en estado pendiente, sin administrador asignado.
+- Al tramitarla pasa a aprobada o rechazada y queda registrado el administrador que la tramitó.
+- No se permite registrar una solicitud sin tipo, solicitante o plan solicitado.
+
+---
 
 #### 4.1.2. Reglas de negocio
 
-##### R.N.01. Título regla negocio
+##### R.N.01. Límite de plazas por sesión
 
-Descripción de la regla de negocio.
+Como administrador,
+quiero que no se puedan registrar más reservas de plaza activas en una sesión que el aforo máximo de su instalación,
+para evitar la sobreocupación y los problemas de seguridad.
 
-### 4.2. Mapa de historias de usuario (opcional)
+**Prueba de aceptación**
 
-### 4.3. Requisitos no funcionales (opcional)
+- Se registran reservas de plaza activas hasta alcanzar el aforo de la instalación de una sesión y no se recibe ningún mensaje de error.
+- Se intenta registrar una reserva más y se recibe un mensaje de error por superar el aforo.
+- Se cancela una reserva de una sesión completa y se puede registrar una nueva.
 
-**R.N.F. 01. Título requisito no funcional**
-Como [tipo de usuario]
-quiero [servicio]
-para [razón]
+##### R.N.02. Compatibilidad entre plan y actividad
+
+Como administrador,
+quiero que solo los socios con un plan que incluya actividades dirigidas (oro o platino) puedan reservar plaza en una sesión,
+para respetar las condiciones contratadas por cada socio.
+
+**Prueba de aceptación**
+
+- Un socio con plan oro reserva plaza en una sesión y no se recibe ningún mensaje de error.
+- Un socio con plan platino reserva plaza en una sesión y no se recibe ningún mensaje de error.
+- Un socio con plan bronce intenta reservar plaza en una sesión y se recibe un mensaje de error por no incluir su plan actividades dirigidas.
+
+##### R.N.03. No solapamiento de sesiones en una instalación
+
+Como administrador,
+quiero que una misma instalación no pueda tener dos sesiones que se solapen en el tiempo,
+para evitar conflictos de uso del espacio.
+
+**Prueba de aceptación**
+
+- Se programan dos sesiones consecutivas en la misma instalación (la segunda empieza cuando termina la primera) y no se recibe ningún mensaje de error.
+- Se programan dos sesiones a la misma hora en instalaciones distintas y no se recibe ningún mensaje de error.
+- Se intenta programar una sesión que se solapa, aunque sea parcialmente, con otra de la misma instalación y se recibe un mensaje de error.
+
+##### R.N.04. No solapamiento de sesiones de un monitor
+
+Como administrador,
+quiero que un monitor no pueda estar asignado a dos sesiones que se solapen en el tiempo,
+para evitar que falte personal en alguna sesión.
+
+**Prueba de aceptación**
+
+- Se asigna un monitor a dos sesiones consecutivas y no se recibe ningún mensaje de error.
+- Se intenta asignar un monitor a una sesión que se solapa con otra suya y se recibe un mensaje de error.
+- Dos sesiones solapadas con monitores distintos no producen ningún error.
+
+##### R.N.05. Cancelación con antelación mínima
+
+Como socio,
+quiero que solo se pueda cancelar una reserva de plaza con al menos 2 horas de antelación al inicio de la sesión,
+para que el centro pueda gestionar la plaza liberada.
+
+**Prueba de aceptación**
+
+- Se cancela una reserva 3 horas antes del inicio de la sesión y no se recibe ningún mensaje de error.
+- Se cancela una reserva exactamente 2 horas antes del inicio y no se recibe ningún mensaje de error.
+- Se intenta cancelar una reserva con menos de 2 horas de antelación y se recibe un mensaje de error.
+
+##### R.N.06. No solapamiento en las pistas de pádel
+
+Como socio,
+quiero que una pista de pádel no pueda tener una reserva que se solape con otra reserva ni con una sesión,
+para asegurarme de que no hay ninguna clase ni otra reserva en la franja que he elegido.
+
+**Prueba de aceptación**
+
+- Se reserva una pista en una franja libre y no se recibe ningún mensaje de error.
+- Se intenta reservar una pista en una franja que se solapa con una clase programada y se recibe un mensaje de error.
+- Se intenta reservar una pista en una franja que se solapa con otra reserva y se recibe un mensaje de error.
+- Se programa una sesión en una pista en una franja que ya tiene una reserva y se recibe un mensaje de error.
+
+##### R.N.07. Entrenador personal solo para el plan platino
+
+Como administrador,
+quiero que solo los socios con plan platino puedan tener un entrenador personal asignado,
+para respetar las condiciones contratadas por cada socio.
+
+**Prueba de aceptación**
+
+- Se asigna un entrenador personal a un socio con plan platino y no se recibe ningún mensaje de error.
+- Se intenta asignar un entrenador personal a un socio con plan bronce u oro y se recibe un mensaje de error.
+- Se intenta cambiar a un plan distinto de platino a un socio que tiene entrenador personal asignado y se recibe un mensaje de error.
 
 -- fin entregable 1 --
 
