@@ -44,7 +44,48 @@ Por otro lado, que permita a los trabajadores asegurarse de un correcto desempe�
      
 ## 2. Glosario de términos
 
-- Términos específicos del dominio del problema, ordenados alfabéticamente. Se valorará la presencia de información multimedia.
+| Término | Definición | Multimedia |
+|---|---|---|
+| **Actividad dirigida** | Actividad deportiva impartida por un monitor en una instalación concreta, con horario y plazas limitadas (natación, aquagym, zumba, yoga, pádel, spinning, hyrox). Solo pueden realizarla socios con plan oro o platino. | — |
+| **Administrador** | Trabajador del centro deportivo encargado de gestionar las asignaciones diarias a los monitores, y tramita los planes de cada socio| — |
+| **Aforo** | Número máximo de personas que admite una instalación. En las sesiones, determina el número máximo de plazas reservables. | — |
+| **Alquiler de pista** | Reserva de una pista de pádel por parte de un socio para uso propio, en una franja horaria en la que no haya ninguna clase programada. | — |
+| **Alta de socio** | Trámite por el que una persona pasa a ser socia del centro contratando un plan. Se realiza mediante una solicitud que gestiona un administrador. | — |
+| **Aquagym** | Actividad dirigida de ejercicio físico en el agua, que se imparte en la piscina. | — |
+| **Asignación** | Relación que establece un administrador entre un monitor y una sesión, indicando horario y sala. Cada monitor consulta sus asignaciones diarias. | — |
+| **Cambio de plan** | Trámite por el que un socio solicita pasar a otro plan. Se materializa en una solicitud que tramita un administrador. | — |
+| **Director** | Responsable de VISOSPORT, que necesita tener centralizada la información de los trabajadores del centro. | — |
+| **Entrenador personal** | Trabajador que entrena individualmente a los socios con plan platino que tiene asignados. Diseña sus rutinas y programa con ellos las sesiones de entrenamiento personal. | — |
+| **Entrenamiento personal** | Servicio de entrenamiento individualizado, con rutina propia, disponible solo para socios con plan platino. Se realiza en la sala de musculación. | — |
+| **Horario** | Franja de día y hora en la que tiene lugar una sesión o una reserva de pista. | — |
+| **Hyrox** | Actividad dirigida de entrenamiento funcional que combina carrera y ejercicios de fuerza, que se imparte en la sala de Hyrox. | — |
+| **Instalación** | Espacio físico del centro (sala de musculación, piscina, piscina de relajación, salas multifuncionales, pistas de pádel, sala de cardio, sala de Hyrox) con un aforo máximo. | — |
+| **Monitor** | Trabajador que imparte las actividades dirigidas. Consulta su agenda diaria con las sesiones asignadas, su horario, la sala y el número de socios apuntados. | — |
+| **Natación** | Actividad dirigida de clases de natación, que se imparte en la piscina. | — |
+| **Pádel** | Deporte de raqueta que se practica en las pistas del centro, ya sea mediante clases dirigidas o mediante alquiler de pista. | — |
+| **Piscina de relajación** | Instalación acuática destinada al descanso, distinta de la piscina de natación y aquagym. | — |
+| **Piscina** | Instalación acuática en la que se imparten las clases de natación y aquagym. | — |
+| **Pista de pádel** | Instalación de pádel. El centro dispone de cuatro, utilizables para clases o para alquiler por parte de los socios. | — |
+| **Plan** | Modalidad contratada por un socio, que determina los servicios a los que tiene derecho: bronce, oro o platino. | — |
+| **Plan bronce** | Plan que da acceso a todas las instalaciones, sin derecho a actividades dirigidas. | — |
+| **Plan oro** | Plan que da acceso a todas las instalaciones y a las actividades dirigidas. | — |
+| **Plan platino** | Plan que da acceso a todas las instalaciones y actividades, con la posibilidad de contar con un entrenador personal. | — |
+| **Reserva** | Plaza que un socio asegura en una sesión o en una pista de pádel, respetando el aforo y las condiciones de su plan. | — |
+| **Rutina** | Conjunto de ejercicios diseñado por un entrenador personal para un socio, que puede actualizar y que el socio consulta desde el sistema. | — |
+| **Sala de cardio** | Instalación equipada con bicicletas de spinning y equipamiento cardiovascular, donde se imparte spinning. | — |
+| **Sala de Hyrox** | Instalación específica en la que se imparte la actividad Hyrox. | — |
+| **Sala multifuncional** | Instalación polivalente en la que se imparten zumba y yoga. El centro dispone de dos. | — |
+| **Sala de musculación** | Instalación de entrenamiento con pesas y máquinas, en la que se realiza el entrenamiento personal. | — |
+| **Sesión** | Celebración concreta de una actividad dirigida en una fecha, horario y sala determinados, con un monitor asignado y un número limitado de plazas. | — |
+| **Socio** | Cliente de VISOSPORT con un plan contratado. Consulta el horario de sesiones, reserva plaza, alquila pistas, solicita cambios de plan y, con plan platino, contrata un entrenador personal. | — |
+| **Solapamiento** | Conflicto de planificación en el que un monitor o una sala tienen asignadas dos sesiones a la misma hora. El sistema debe evitarlo. | — |
+| **Solicitud** | Petición realizada por un socio (alta o cambio de plan) cuyo estado registra y resuelve un administrador. | — |
+| **Spinning** | Actividad dirigida de ciclismo indoor en grupo, con una bicicleta por asistente, que se imparte en la sala de cardio. | — |
+| **Trabajador** | Persona empleada en el centro: administrador, monitor o entrenador personal. | — |
+| **Uso libre** | Utilización por parte de los socios de las instalaciones fuera de las actividades dirigidas. El sistema no lo gestiona, salvo la reserva de pistas de pádel. | — |
+| **Yoga** | Actividad dirigida de ejercicios de postura, respiración y relajación, que se imparte en las salas multifuncionales. | — |
+| **Zumba** | Actividad dirigida de baile y ejercicio aeróbico, que se imparte en las salas multifuncionales. | — |
+
 
 ## 3. Visión general del sistema
 
