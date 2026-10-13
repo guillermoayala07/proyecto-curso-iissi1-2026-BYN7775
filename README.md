@@ -29,6 +29,10 @@ Actualmente la gestión de VISOSPORT se hace de forma manual, con hojas de cálc
   6. Rutinas en papel: los entrenadores personales entregan las rutinas en papel o por mensaje, y se pierden o quedan desactualizadas.
   7. Trámites lentos: las altas y los cambios de plan se gestionan en papel, sin registro de su estado.
 
+Aquí un video del cliente explicando la situación actual del centro deportivo:
+
+https://github.com/user-attachments/assets/ec9965a4-e051-422e-9dd2-2b8a21ad7e05
+
 ### 1.3. Expectativas
 La dirección de VISOSPORT, en calidad de cliente, requiere de un sistema dirigido a todos los usuarios (tanto socios como trabajadores).
 
