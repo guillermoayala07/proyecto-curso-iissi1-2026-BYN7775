@@ -9,6 +9,8 @@
 ## 1. Introducción al problema
 
 ### 1.1. Contexto
+<img width="2048" height="768" alt="Logotipo deportivo Visosport moderno" src="https://github.com/user-attachments/assets/ffa52df9-a9b6-40b3-9f1a-790afd26f718" />
+
 - VISOSPORT es un centro deportivo privado situado en El Viso del Alcor. Cuenta con múltiples instalaciones en las que se imparten diferentes actividades deportivas dirigidas:
   1. Sala de musculación - Entrenamiento Personal
   2. Piscina y piscina de relajación - Clases de natación y Aquagym
