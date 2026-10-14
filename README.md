@@ -11,7 +11,7 @@
 ### 1.1. Contexto
 <img width="2048" height="768" alt="Logotipo deportivo Visosport moderno" src="https://github.com/user-attachments/assets/ffa52df9-a9b6-40b3-9f1a-790afd26f718" />
 
-- VISOSPORT es un centro deportivo privado situado en El Viso del Alcor. Cuenta con múltiples instalaciones en las que se imparten diferentes actividades deportivas dirigidas:
+VISOSPORT es un centro deportivo privado situado en El Viso del Alcor. Cuenta con múltiples instalaciones en las que se imparten diferentes actividades deportivas dirigidas:
   1. Sala de musculación - Entrenamiento Personal
   2. Piscina y piscina de relajación - Clases de natación y Aquagym
   3. Sala multifuncional (2) - Zumba y Yoga
@@ -97,13 +97,10 @@ El sistema de información de VISOSPORT centralizará la gestión del centro dep
 
 ### 3.1. Requisitos generales
 
-  1. Como director de VISOSPORT, quiero tener centralizada la información sobre mis trabajadores para saber con qué personal cuento.
-  2. Como administrador, quiero gestionar las solicitudes de alta y cambio de plan de los socios del centro para saber a qué servicios tienen derecho.
-  3. Como administrador, quiero gestionar las instalaciones del centro, teniendo siempre en cuenta su aforo para aprovechar al máximo los espacios disponibles.
-  4. Como administrador, quiero programar las sesiones de cada actividad y asignar a cada una un monitor, una sala y un horario para que se den las clases correctamente y evitar solapamientos.
-  5. Como entrenador personal, quiero poder gestionar adecuadamente las rutinas de mis socios asignados así como comunicarme con ellos, para poder estar al tanto de su progreso y concertar las sesiones de entrenamiento.
-  6. Como socio, quiero consultar las sesiones disponibles, así como sus horarios, y poder reservar para asegurarme de que voy a poder disfrutar de las actividades que quiero.
-  7. Como socio, quiero poder reservar telemáticamente pistas de pádel para asegurarme de que no haya ninguna clase en la franja horario que deseo.
+  1. Como administrador, quiero gestionar los socios y sus planes, los trabajadores, las instalaciones, las actividades y la planificación de las sesiones, para que el centro funcione de forma organizada y sin solapamientos.
+  2. Como monitor, quiero consultar las sesiones que tengo asignadas cada día, para saber qué actividad tengo que impartir, a qué hora y en qué sala.
+  3. Como entrenador personal, quiero gestionar las rutinas y las sesiones de entrenamiento de los socios que tengo asignados, para hacer un seguimiento personalizado de su progreso.
+  4. Como socio, quiero reservar plaza en las actividades, alquilar pistas de pádel y, si mi plan lo permite, contratar un entrenador personal, para aprovechar los servicios que me ofrece mi plan.
      
 ### 3.2. Usuarios del sistema
 
