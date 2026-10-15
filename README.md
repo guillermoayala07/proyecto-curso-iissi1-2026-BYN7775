@@ -497,8 +497,6 @@ Describen aspectos de calidad del sistema (compatibilidad, fiabilidad, eficienci
 
 #### R.N.F.01. Funcionamiento en MariaDB
 
-*Restricción técnica / compatibilidad.*
-
 Como director,
 quiero que el sistema funcione sobre un servidor de bases de datos MariaDB,
 para poder instalarlo en la infraestructura del centro sin cambios.
@@ -508,8 +506,6 @@ para poder instalarlo en la infraestructura del centro sin cambios.
 - Los scripts de creación de tablas, funciones, procedimientos, triggers y poblado se ejecutan en MariaDB, en el orden indicado, sin ningún error.
 
 #### R.N.F.02. Operaciones completas o ninguna
-
-*Fiabilidad.*
 
 Como administrador,
 quiero que las operaciones de reserva y cancelación se realicen por completo o no se realicen en absoluto,
@@ -522,8 +518,6 @@ para que nunca queden datos a medias ni inconsistentes.
 
 #### R.N.F.03. Mensajes de error comprensibles
 
-*Usabilidad.*
-
 Como administrador,
 quiero que, cuando una operación sea rechazada por incumplir una regla de negocio, el sistema muestre un mensaje que indique el motivo,
 para saber qué debo corregir.
@@ -534,8 +528,6 @@ para saber qué debo corregir.
 
 #### R.N.F.04. Tiempo de respuesta de las consultas
 
-*Eficiencia.*
-
 Como socio,
 quiero que las consultas de sesiones y de reservas respondan en menos de 2 segundos,
 para no perder tiempo al reservar.
@@ -543,8 +535,6 @@ para no perder tiempo al reservar.
 **Prueba de aceptación**
 
 - Con el volumen de datos de un año de actividad del centro (unos 600 socios y varios miles de reservas), las consultas R.F.01 y R.F.02 tardan menos de 2 segundos.
-
--- fin entregable 1 --
 
 ## 5. Modelo conceptual
 
