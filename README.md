@@ -44,24 +44,23 @@ Por un lado, que ofrezca a los socios una interfaz que permita reservar los serv
   3. Plan platino: Acceso a todas las instalaciones y actividades, con la posibilidad de contar con un entrenador personal.
 
 Por otro lado, que permita a los trabajadores asegurarse de un correcto desempeño de su función, más concretamente:
-  1. Administradores: asignan diariamente a cada monitor las actividades que le tocará dirigir, en un horario y una sala determinados. Además, tramitan las solicitudes de alta y cambio de plan para usuarios.
+  1. Administradores: asignan diariamente a cada monitor las actividades que le tocará dirigir, en un horario y una sala determinados. Además, registran directamente las altas de nuevos socios y tramitan las solicitudes de cambio de plan de los socios.
   2. Monitores: revisan las asignaciones diarias impuestas por los administradores.
-  3. Entrenadores personales: diseñan las rutinas de los usuarios que tengan asignados y se coordinan con ellos para cada entrenamiento.
+  3. Entrenadores personales: diseñan y actualizan las rutinas de los socios con plan platino que tengan asignados.
      
 ## 2. Glosario de términos
 
 | Término | Definición | Multimedia |
 |---|---|---|
 | **Actividad dirigida** | Actividad deportiva impartida por un monitor en una instalación concreta, con horario y plazas limitadas (natación, aquagym, zumba, yoga, pádel, spinning, hyrox). Solo pueden realizarla socios con plan oro o platino. | <img width="150" alt="Actividad Deportiva" src="https://github.com/user-attachments/assets/9171e284-51a1-4ca7-9eef-2f1e5300aac2" /> |
-| **Administrador** | Trabajador del centro deportivo encargado de gestionar las asignaciones diarias a los monitores, y tramita los planes de cada socio| <img width="150" alt="Administrador" src="https://github.com/user-attachments/assets/f70ef0f9-aec9-408c-860f-ddf0eb7c7c13" /> |
+| **Administrador** | Trabajador del centro deportivo encargado de gestionar las asignaciones diarias a los monitores, registrar las altas de nuevos socios y tramitar las solicitudes de cambio de plan. | <img width="150" alt="Administrador" src="https://github.com/user-attachments/assets/f70ef0f9-aec9-408c-860f-ddf0eb7c7c13" /> |
 | **Aforo** | Número máximo de personas que admite una instalación. En las sesiones, determina el número máximo de plazas reservables. | <img width="150" alt="Aforo" src="https://github.com/user-attachments/assets/22829f43-c039-4da2-a1b4-5b5c89802652" /> |
-| **Reserva de pista** | Reserva de una pista de pádel por parte de un socio para uso propio, en una franja horaria en la que no haya ninguna clase programada. | <img width="150" alt="Reserva de pista" src="https://github.com/user-attachments/assets/3b781ebb-bdf1-4e3b-a4db-755878606808" /> |
-| **Alta de socio** | Trámite por el que una persona pasa a ser socia del centro contratando un plan. Se realiza mediante una solicitud que gestiona un administrador. | <img width="150" alt="Darse de alta" src="https://github.com/user-attachments/assets/c4550f5f-3e36-4d3d-b965-b6525d135d35" /> |
+| **Alta de socio** | Trámite por el que una persona pasa a ser socia del centro contratando un plan. Lo registra directamente un administrador en el sistema. | <img width="150" alt="Darse de alta" src="https://github.com/user-attachments/assets/c4550f5f-3e36-4d3d-b965-b6525d135d35" /> |
 | **Aquagym** | Actividad dirigida de ejercicio físico en el agua, que se imparte en la piscina. | <img width="150" alt="Aquagym" src="https://github.com/user-attachments/assets/6bf3a18d-b779-4cfe-ba7f-523a3d4817e9" /> |
 | **Asignación diaria** | Relación que establece un administrador entre un monitor y una sesión, indicando horario y sala. Cada monitor consulta sus asignaciones diarias. | <img width="150" alt="Asignacion diaria" src="https://github.com/user-attachments/assets/46cf7aeb-7875-4ade-a1b7-2b8639c90ace" /> |
 | **Cambio de plan** | Trámite por el que un socio solicita pasar a otro plan. Se materializa en una solicitud que tramita un administrador. | <img width="150" alt="Cambio de plan" src="https://github.com/user-attachments/assets/b3026d35-be0d-41f9-9aed-92689db0ca57" /> |
 | **Director** | Responsable de VISOSPORT, que necesita tener centralizada la información de los trabajadores del centro. | <img width="150" alt="Director" src="https://github.com/user-attachments/assets/753bcc66-fcc2-486d-9d64-f6032b52c184" /> |
-| **Entrenador personal** | Trabajador que entrena individualmente a los socios con plan platino que tiene asignados. Diseña sus rutinas y programa con ellos las sesiones de entrenamiento personal. | <img width="150" alt="Entrenador personal" src="https://github.com/user-attachments/assets/e42b7f62-1ccd-401e-912e-3c63144553d8" /> |
+| **Entrenador personal** | Trabajador que entrena individualmente a los socios con plan platino que tiene asignados. Diseña y actualiza sus rutinas. | <img width="150" alt="Entrenador personal" src="https://github.com/user-attachments/assets/e42b7f62-1ccd-401e-912e-3c63144553d8" /> |
 | **Entrenamiento personal** | Servicio de entrenamiento individualizado, con rutina propia, disponible solo para socios con plan platino. Se realiza en la sala de musculación. | <img width="150" alt="Entrenamiento personal" src="https://github.com/user-attachments/assets/be9dc857-22bc-4714-b678-06bcf89af6b3" /> |
 | **Horario** | Franja de día y hora en la que tiene lugar una sesión o una reserva de pista. | <img width="150" alt="Horario" src="https://github.com/user-attachments/assets/17a97ae9-609b-48d8-93f5-6bbb81be2326" /> |
 | **Hyrox** | Actividad dirigida de entrenamiento funcional que combina carrera y ejercicios de fuerza, que se imparte en la sala de Hyrox. | <img width="150" alt="hyrox" src="https://github.com/user-attachments/assets/7a61887c-b60b-43af-aa89-498a74796980" /> |
@@ -69,19 +68,20 @@ Por otro lado, que permita a los trabajadores asegurarse de un correcto desempe�
 | **Monitor** | Trabajador que imparte las actividades dirigidas. Consulta su agenda diaria con las sesiones asignadas, su horario, la sala y el número de socios apuntados. | <img width="150" alt="monitor" src="https://github.com/user-attachments/assets/c4f82752-78bb-486d-8c4d-4477a4c62f25" /> |
 | **Natación** | Actividad dirigida de clases de natación, que se imparte en la piscina. | <img width="150" alt="natacion" src="https://github.com/user-attachments/assets/8706e7a2-b5de-4a12-9622-de8a2bbc6f73" /> |
 | **Pádel** | Deporte de raqueta que se practica en las pistas del centro, ya sea mediante clases dirigidas o mediante alquiler de pista. | <img width="150" alt="Padel" src="https://github.com/user-attachments/assets/b8c1a83e-9316-4a87-a1a9-85fa5cae72ec" /> |
-| **Piscina de relajación** | Instalación acuática destinada al descanso, distinta de la piscina de natación y aquagym. | <img width="150" alt="Piscina de relajacion" src="https://github.com/user-attachments/assets/d8f66128-ea01-4271-9395-84e44180f4f5" /> |
 | **Piscina** | Instalación acuática en la que se imparten las clases de natación y aquagym. | <img width="150" alt="piscina" src="https://github.com/user-attachments/assets/ec4038f7-cefd-46b7-82ae-1d9c6ce4ce0f" />|
+| **Piscina de relajación** | Instalación acuática destinada al descanso, distinta de la piscina de natación y aquagym. | <img width="150" alt="Piscina de relajacion" src="https://github.com/user-attachments/assets/d8f66128-ea01-4271-9395-84e44180f4f5" /> |
 | **Pista de pádel** | Instalación de pádel. El centro dispone de cuatro, utilizables para clases o para alquiler por parte de los socios. | <img width="150" alt="pista de padel" src="https://github.com/user-attachments/assets/ea074245-4263-45c0-93ae-e1e5c8eed583" /> |
 | **Plan** | Modalidad contratada por un socio, que determina los servicios a los que tiene derecho: bronce, oro o platino. | <img width="150" alt="plan" src="https://github.com/user-attachments/assets/aa0cb18c-ddee-4171-8ecb-ae12e032c265" /> |
 | **Plan bronce** | Plan que da acceso a todas las instalaciones, sin derecho a actividades dirigidas. | <img width="150" alt="bronce" src="https://github.com/user-attachments/assets/6e1deaae-2894-40c9-b4f5-8e23977ef012" /> |
 | **Plan oro** | Plan que da acceso a todas las instalaciones y a las actividades dirigidas. | <img width="150" alt="oro" src="https://github.com/user-attachments/assets/83a83702-1fda-4c78-9693-b5ca702caa9f" /> |
 | **Plan platino** | Plan que da acceso a todas las instalaciones y actividades, con la posibilidad de contar con un entrenador personal. | <img width="150" alt="platino" src="https://github.com/user-attachments/assets/81ef1249-13aa-4121-914f-64d0fb37ea41" /> |
 | **Reserva** | Plaza que un socio asegura en una sesión o en una pista de pádel, respetando el aforo y las condiciones de su plan. | <img width="150" alt="reserva" src="https://github.com/user-attachments/assets/1a26a513-f570-4cd3-b048-50c93e591397" /> |
+| **Reserva de pista** | Reserva de una pista de pádel por parte de un socio para uso propio, en una franja horaria en la que no haya ninguna clase programada. Puede cancelarse con al menos 2 horas de antelación. | <img width="150" alt="Reserva de pista" src="https://github.com/user-attachments/assets/3b781ebb-bdf1-4e3b-a4db-755878606808" /> |
 | **Rutina** | Conjunto de ejercicios diseñado por un entrenador personal para un socio, que puede actualizar y que el socio consulta desde el sistema. | <img width="150" alt="rutina" src="https://github.com/user-attachments/assets/01351d64-02c0-4a59-bd6b-bd16e7492cf1" /> |
 | **Sala de cardio** | Instalación equipada con bicicletas de spinning y equipamiento cardiovascular, donde se imparte spinning. | <img width="150" alt="Cardio" src="https://github.com/user-attachments/assets/b01b70a7-b798-4069-a7c1-ce68653a273e" /> |
 | **Sala de Hyrox** | Instalación específica en la que se imparte la actividad Hyrox. | <img width="150" alt="Sala de hyrox" src="https://github.com/user-attachments/assets/9f8d53dc-2aca-4a4c-ae4b-e5355629e622" /> |
-| **Sala multifuncional** | Instalación polivalente en la que se imparten zumba y yoga. El centro dispone de dos. | <img width="150" alt="sala multifuncional" src="https://github.com/user-attachments/assets/5560ad7a-4219-47c4-9ab4-f77489a6d20e" /> |
 | **Sala de musculación** | Instalación de entrenamiento con pesas y máquinas, en la que se realiza el entrenamiento personal. | <img width="150" alt="Sala de musculacion" src="https://github.com/user-attachments/assets/78abfee9-4891-4863-b166-9dbfe27ed367" /> |
+| **Sala multifuncional** | Instalación polivalente en la que se imparten zumba y yoga. El centro dispone de dos. | <img width="150" alt="sala multifuncional" src="https://github.com/user-attachments/assets/5560ad7a-4219-47c4-9ab4-f77489a6d20e" /> |
 | **Sesión** | Celebración concreta de una actividad dirigida en una fecha, horario y sala determinados, con un monitor asignado y un número limitado de plazas. | <img width="150" alt="sesion" src="https://github.com/user-attachments/assets/fcc035b3-e639-46fc-8317-7e82dd1c4e5f" /> |
 | **Socio** | Cliente de VISOSPORT con un plan contratado. Consulta el horario de sesiones, reserva plaza, alquila pistas, solicita cambios de plan y, con plan platino, contrata un entrenador personal. | <img width="150" alt="Socio" src="https://github.com/user-attachments/assets/6469ad8b-feb9-41b5-944a-64c24d22d151" /> |
 | **Spinning** | Actividad dirigida de ciclismo indoor en grupo, con una bicicleta por asistente, que se imparte en la sala de cardio. | <img width="150" alt="spinning" src="https://github.com/user-attachments/assets/f11cc909-cb8f-4c05-b8fc-70c03816ec26" />|
@@ -97,17 +97,18 @@ El sistema de información de VISOSPORT centralizará la gestión del centro dep
 
 ### 3.1. Requisitos generales
 
-  1. Como administrador, quiero gestionar los socios y sus planes, los trabajadores, las instalaciones, las actividades y la planificación de las sesiones, para que el centro funcione de forma organizada y sin solapamientos.
-  2. Como monitor, quiero consultar las sesiones que tengo asignadas cada día, para saber qué actividad tengo que impartir, a qué hora y en qué sala.
-  3. Como entrenador personal, quiero gestionar las rutinas y las sesiones de entrenamiento de los socios que tengo asignados, para hacer un seguimiento personalizado de su progreso.
-  4. Como socio, quiero reservar plaza en las actividades, alquilar pistas de pádel y, si mi plan lo permite, contratar un entrenador personal, para aprovechar los servicios que me ofrece mi plan.
+  1. **RG-1.** Como administrador, quiero gestionar los socios y sus planes, los trabajadores, las instalaciones, las actividades y la planificación de las sesiones, para que el centro funcione de forma organizada y sin solapamientos.
+  2. **RG-2.** Como monitor, quiero consultar las sesiones que tengo asignadas cada día, para saber qué actividad tengo que impartir, a qué hora y en qué sala.
+  3. **RG-3.** Como entrenador personal, quiero gestionar las rutinas de los socios que tengo asignados, para hacer un seguimiento personalizado de su progreso.
+  4. **RG-4.** Como socio, quiero reservar plaza en las actividades, alquilar pistas de pádel y, si mi plan lo permite, contratar un entrenador personal, para aprovechar los servicios que me ofrece mi plan.
      
 ### 3.2. Usuarios del sistema
 
-  1. Administrador: trabajador encargado de la gestión del centro. Programa las sesiones de las actividades dirigidas, asigna los monitores a cada sesión, gestiona las instalaciones y actividades, y tramita las solicitudes de alta y de cambio de plan de los socios.
+  1. Administrador: trabajador encargado de la gestión del centro. Programa las sesiones de las actividades dirigidas, asigna los monitores a cada sesión, gestiona las instalaciones y actividades, registra las altas de nuevos socios y tramita las solicitudes de cambio de plan.
   2. Monitor: trabajador que imparte las actividades dirigidas. Consulta su agenda diaria con las sesiones que tiene asignadas, su horario, la sala y el número de socios apuntados.
-  3. Entrenador personal: trabajador que entrena individualmente a los socios con plan platino que tiene asignados. Diseña y actualiza sus rutinas y programa con ellos las sesiones de entrenamiento personal.
+  3. Entrenador personal: trabajador que entrena individualmente a los socios con plan platino que tiene asignados. Diseña y actualiza sus rutinas.
   4. Socio: cliente de VISOSPORT con un plan contratado. Consulta el horario de sesiones y reserva plaza en ellas, alquila pistas de pádel, solicita cambios de plan y, si tiene plan platino, contrata un entrenador personal y consulta su rutina.
+  5. Director: responsable de VISOSPORT. Consulta la información centralizada de los trabajadores del centro.
 
 ## 4. Catálogo de requisitos
 
@@ -132,24 +133,26 @@ para decidir en cuáles quiero reservar plaza.
 #### R.F.02. Consultar mis reservas
 
 Como socio,
-quiero consultar las reservas de plaza en sesiones y las reservas de pista de pádel que tengo realizadas,
+quiero consultar las reservas activas de plaza en sesiones y de pista de pádel que tengo realizadas,
 para saber a qué voy a asistir y cuándo.
 
 **Prueba de aceptación**
 
 - Un socio con reservas de plaza y de pista obtiene ambas, con su fecha, horario e instalación, ordenadas por fecha.
+- Una reserva cancelada, de plaza o de pista, no aparece en el listado.
 - Un socio sin ninguna reserva obtiene un listado vacío.
 - Un socio solo puede ver sus propias reservas, no las de otros socios.
 
 #### R.F.03. Consultar la ocupación de una instalación
 
 Como administrador,
-quiero consultar el calendario de ocupación de una instalación en un día o rango de fechas, con sus sesiones y sus reservas de pista,
+quiero consultar el calendario de ocupación de una instalación en un día o rango de fechas, con sus sesiones y sus reservas de pista activas,
 para planificar nuevas sesiones sin solapamientos.
 
 **Prueba de aceptación**
 
-- Se consulta una instalación y se obtienen sus sesiones y, si es una pista de pádel, sus reservas, ordenadas por fecha y hora de inicio.
+- Se consulta una instalación y se obtienen sus sesiones y, si es una pista de pádel, sus reservas activas, ordenadas por fecha y hora de inicio.
+- Una reserva de pista cancelada no aparece como ocupación.
 - Una franja horaria sin sesiones ni reservas no aparece como ocupada.
 - Se debe aplicar la regla de negocio R.N.03: en el resultado no aparecen dos sesiones solapadas de una misma instalación.
 - Se debe aplicar la regla de negocio R.N.06: en el resultado de una pista no aparecen reservas solapadas entre sí ni con sesiones.
@@ -238,7 +241,7 @@ para gestionarlas y que los socios sepan a qué servicios tienen derecho.
 
 **Prueba de aceptación**
 
-- Se obtienen las solicitudes en estado pendiente con su tipo (cambio de plan), solicitante, plan solicitado y fecha.
+- Se obtienen las solicitudes en estado pendiente con su socio solicitante, plan solicitado y fecha.
 - Una solicitud ya tramitada (aprobada o rechazada) no aparece en el listado.
 - El listado está ordenado de la solicitud más antigua a la más reciente.
 
@@ -337,7 +340,7 @@ para tener asegurada mi plaza en la actividad.
 ##### R.I.08. Reservas de pista
 
 Como socio,
-quiero que quede registrada la información de mis reservas de pista de pádel: socio, pista, fecha, hora de inicio y hora de fin,
+quiero que quede registrada la información de mis reservas de pista de pádel: socio, pista, fecha, hora de inicio, hora de fin y estado (activa o cancelada),
 para poder jugar en la franja que he elegido.
 
 **Prueba de aceptación**
@@ -345,7 +348,8 @@ para poder jugar en la franja que he elegido.
 - Se registra una reserva de pista y aparece al consultar las reservas del socio y las de la pista.
 - No se permite registrar una reserva cuya hora de fin sea anterior o igual a su hora de inicio.
 - No se permite registrar una reserva sobre una instalación que no sea una pista de pádel.
-- Se debe aplicar la regla de negocio R.N.06.
+- Una reserva cancelada conserva su registro con el estado cancelada.
+- Se deben aplicar las reglas de negocio R.N.05 y R.N.06.
 
 ##### R.I.09. Entrenador personal asignado
 
@@ -357,7 +361,8 @@ para saber qué socios entrena cada entrenador personal.
 
 - Se asigna un entrenador personal a un socio con plan platino y aparece al consultar los socios del entrenador.
 - No se permite asignar como entrenador a un trabajador que no sea de tipo entrenador personal.
-- Un socio tiene como máximo un entrenador personal asignado a la vez.
+- Un socio tiene como máximo un entrenador personal asignado.
+- Se cambia el entrenador personal de un socio: el nuevo entrenador sustituye al anterior, se actualiza la fecha de inicio y el socio deja de aparecer en el listado de socios del entrenador anterior.
 - Se debe aplicar la regla de negocio R.N.07.
 
 ##### R.I.10. Rutinas
@@ -375,14 +380,14 @@ para planificar el entrenamiento de cada socio y que este pueda consultarlo.
 ##### R.I.11. Solicitudes de cambio de plan
 
 Como administrador,
-quiero disponer de la siguiente información sobre las solicitudes de cambio de plan: solicitante, plan solicitado, fecha de la solicitud, estado (pendiente, aprobada o rechazada) y administrador que la tramita,
+quiero disponer de la siguiente información sobre las solicitudes de cambio de plan: socio solicitante, plan solicitado, fecha de la solicitud, estado (pendiente, aprobada o rechazada) y administrador que la tramita,
 para llevar un registro del estado de cada trámite.
 
 **Prueba de aceptación**
 
 - Se registra una solicitud nueva y queda en estado pendiente, sin administrador asignado.
 - Al tramitarla pasa a aprobada o rechazada y queda registrado el administrador que la tramitó.
-- No se permite registrar una solicitud sin tipo, solicitante o plan solicitado.
+- No se permite registrar una solicitud sin socio solicitante o plan solicitado.
 
 ---
 
@@ -439,27 +444,30 @@ para evitar que falte personal en alguna sesión.
 ##### R.N.05. Cancelación con antelación mínima
 
 Como socio,
-quiero que solo se pueda cancelar una reserva de plaza con al menos 2 horas de antelación al inicio de la sesión,
-para que el centro pueda gestionar la plaza liberada.
+quiero que solo se pueda cancelar una reserva de plaza o de pista con al menos 2 horas de antelación a su inicio,
+para que el centro pueda gestionar la plaza o la pista liberada.
 
 **Prueba de aceptación**
 
-- Se cancela una reserva 3 horas antes del inicio de la sesión y no se recibe ningún mensaje de error.
-- Se cancela una reserva exactamente 2 horas antes del inicio y no se recibe ningún mensaje de error.
-- Se intenta cancelar una reserva con menos de 2 horas de antelación y se recibe un mensaje de error.
+- Se cancela una reserva de plaza 3 horas antes del inicio de la sesión y no se recibe ningún mensaje de error.
+- Se cancela una reserva de plaza exactamente 2 horas antes del inicio y no se recibe ningún mensaje de error.
+- Se intenta cancelar una reserva de plaza con menos de 2 horas de antelación y se recibe un mensaje de error.
+- Se cancela una reserva de pista 3 horas antes de su hora de inicio y no se recibe ningún mensaje de error.
+- Se intenta cancelar una reserva de pista con menos de 2 horas de antelación y se recibe un mensaje de error.
 
 ##### R.N.06. No solapamiento en las pistas de pádel
 
 Como socio,
-quiero que una pista de pádel no pueda tener una reserva que se solape con otra reserva ni con una sesión,
+quiero que una pista de pádel no pueda tener una reserva activa que se solape con otra reserva activa ni con una sesión,
 para asegurarme de que no hay ninguna clase ni otra reserva en la franja que he elegido.
 
 **Prueba de aceptación**
 
 - Se reserva una pista en una franja libre y no se recibe ningún mensaje de error.
 - Se intenta reservar una pista en una franja que se solapa con una clase programada y se recibe un mensaje de error.
-- Se intenta reservar una pista en una franja que se solapa con otra reserva y se recibe un mensaje de error.
-- Se programa una sesión en una pista en una franja que ya tiene una reserva y se recibe un mensaje de error.
+- Se intenta reservar una pista en una franja que se solapa con otra reserva activa y se recibe un mensaje de error.
+- Se reserva una pista en una franja en la que solo hay una reserva cancelada y no se recibe ningún mensaje de error.
+- Se programa una sesión en una pista en una franja que ya tiene una reserva activa y se recibe un mensaje de error.
 
 ##### R.N.07. Entrenador personal solo para el plan platino
 
@@ -481,13 +489,10 @@ Los requisitos generales (objetivos, o historias épicas) organizan jerárquicam
 
 | Objetivo (requisito general) | Requisitos de información | Reglas de negocio | Requisitos funcionales |
 |---|---|---|---|
-| **RG-1.** Centralizar la información de los trabajadores | R.I.03 Trabajadores | | R.F.09 Listado de trabajadores |
-| **RG-2.** Gestionar las solicitudes de alta y cambio de plan | R.I.01 Socios<br>R.I.02 Planes<br>R.I.11 Solicitudes de alta y cambio de plan | R.N.02 Compatibilidad entre plan y actividad<br>R.N.07 Entrenador personal solo para el plan platino | R.F.10 Listado de solicitudes pendientes |
-| **RG-3.** Gestionar las instalaciones teniendo en cuenta su aforo | R.I.04 Instalaciones | R.N.01 Límite de plazas por sesión | R.F.03 Consultar la ocupación de una instalación |
-| **RG-4.** Programar las sesiones, con monitor, sala y horario, evitando solapamientos | R.I.05 Actividades dirigidas<br>R.I.06 Sesiones | R.N.03 No solapamiento de sesiones en una instalación<br>R.N.04 No solapamiento de sesiones de un monitor | R.F.03 Consultar la ocupación de una instalación<br>R.F.04 Listado de sesiones sin monitor<br>R.F.05 Listado de socios con reserva en una sesión<br>R.F.06 Consultar mi agenda diaria |
-| **RG-5.** Gestionar las rutinas de los socios asignados a un entrenador personal | R.I.09 Entrenador personal asignado<br>R.I.10 Rutinas | R.N.07 Entrenador personal solo para el plan platino | R.F.07 Consultar mi rutina<br>R.F.08 Consultar mis socios asignados |
-| **RG-6.** Consultar las sesiones disponibles y reservar plaza | R.I.07 Reservas de plaza | R.N.01 Límite de plazas por sesión<br>R.N.02 Compatibilidad entre plan y actividad<br>R.N.05 Cancelación con antelación mínima | R.F.01 Consultar sesiones disponibles<br>R.F.02 Consultar mis reservas |
-| **RG-7.** Reservar pistas de pádel | R.I.08 Reservas de pista | R.N.06 No solapamiento en las pistas de pádel | R.F.02 Consultar mis reservas<br>R.F.03 Consultar la ocupación de una instalación |
+| **RG-1.** Gestionar los socios y sus planes, los trabajadores, las instalaciones, las actividades y la planificación de las sesiones (administrador) | R.I.01 Socios<br>R.I.02 Planes<br>R.I.03 Trabajadores<br>R.I.04 Instalaciones<br>R.I.05 Actividades dirigidas<br>R.I.06 Sesiones<br>R.I.11 Solicitudes de cambio de plan | R.N.03 No solapamiento de sesiones en una instalación<br>R.N.04 No solapamiento de sesiones de un monitor<br>R.N.06 No solapamiento en las pistas de pádel<br>R.N.07 Entrenador personal solo para el plan platino | R.F.03 Consultar la ocupación de una instalación<br>R.F.04 Listado de sesiones sin monitor<br>R.F.09 Listado de trabajadores<br>R.F.10 Listado de solicitudes pendientes |
+| **RG-2.** Consultar las sesiones asignadas cada día (monitor) | R.I.06 Sesiones<br>R.I.07 Reservas de plaza | R.N.01 Límite de plazas por sesión<br>R.N.04 No solapamiento de sesiones de un monitor | R.F.05 Listado de socios con reserva en una sesión<br>R.F.06 Consultar mi agenda diaria |
+| **RG-3.** Gestionar las rutinas de los socios asignados (entrenador personal) | R.I.09 Entrenador personal asignado<br>R.I.10 Rutinas | R.N.07 Entrenador personal solo para el plan platino | R.F.07 Consultar mi rutina<br>R.F.08 Consultar mis socios asignados |
+| **RG-4.** Reservar plaza en las actividades, alquilar pistas de pádel y contratar un entrenador personal (socio) | R.I.07 Reservas de plaza<br>R.I.08 Reservas de pista<br>R.I.09 Entrenador personal asignado | R.N.01 Límite de plazas por sesión<br>R.N.02 Compatibilidad entre plan y actividad<br>R.N.05 Cancelación con antelación mínima<br>R.N.06 No solapamiento en las pistas de pádel<br>R.N.07 Entrenador personal solo para el plan platino | R.F.01 Consultar sesiones disponibles<br>R.F.02 Consultar mis reservas |
 
 ---
 
@@ -535,6 +540,18 @@ para no perder tiempo al reservar.
 **Prueba de aceptación**
 
 - Con el volumen de datos de un año de actividad del centro (unos 600 socios y varios miles de reservas), las consultas R.F.01 y R.F.02 tardan menos de 2 segundos.
+
+#### R.N.F.05. Acceso restringido a los propios datos
+
+Como director,
+quiero que cada usuario solo pueda consultar la información que le corresponde según su función,
+para proteger los datos personales de socios y trabajadores.
+
+**Prueba de aceptación**
+
+- Un socio solo obtiene sus propias reservas y su propia rutina, nunca las de otros socios.
+- Un monitor solo obtiene en su agenda las sesiones que tiene asignadas.
+- Un entrenador personal solo obtiene los socios que tiene asignados.
 
 ## 5. Modelo conceptual
 
@@ -593,7 +610,5 @@ para no perder tiempo al reservar.
 
 Se consideran todo tipo de constraints declarativas (aquellas definidas durante el CREATE TABLE).
 -- fin entregable 3 --
-
-## Referencias
 
 
