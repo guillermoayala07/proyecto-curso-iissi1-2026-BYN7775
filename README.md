@@ -233,12 +233,12 @@ para saber con qué personal cuento.
 #### R.F.10. Listado de solicitudes pendientes
 
 Como administrador,
-quiero obtener un listado de las solicitudes de alta y de cambio de plan que están pendientes de tramitar,
+quiero obtener un listado de las solicitudes de cambio de plan que están pendientes de tramitar,
 para gestionarlas y que los socios sepan a qué servicios tienen derecho.
 
 **Prueba de aceptación**
 
-- Se obtienen las solicitudes en estado pendiente con su tipo (alta o cambio de plan), solicitante, plan solicitado y fecha.
+- Se obtienen las solicitudes en estado pendiente con su tipo (cambio de plan), solicitante, plan solicitado y fecha.
 - Una solicitud ya tramitada (aprobada o rechazada) no aparece en el listado.
 - El listado está ordenado de la solicitud más antigua a la más reciente.
 
@@ -372,10 +372,10 @@ para planificar el entrenamiento de cada socio y que este pueda consultarlo.
 - No se permite registrar un ejercicio con series o repeticiones menores o iguales que cero.
 - No se permite registrar una rutina para un socio que no tiene asignado a ese entrenador personal.
 
-##### R.I.11. Solicitudes de alta y cambio de plan
+##### R.I.11. Solicitudes de cambio de plan
 
 Como administrador,
-quiero disponer de la siguiente información sobre las solicitudes de alta y de cambio de plan: tipo (alta o cambio de plan), solicitante, plan solicitado, fecha de la solicitud, estado (pendiente, aprobada o rechazada) y administrador que la tramita,
+quiero disponer de la siguiente información sobre las solicitudes de cambio de plan: solicitante, plan solicitado, fecha de la solicitud, estado (pendiente, aprobada o rechazada) y administrador que la tramita,
 para llevar un registro del estado de cada trámite.
 
 **Prueba de aceptación**
