@@ -265,8 +265,14 @@ para gestionar a los socios del centro y saber a qué servicios tienen derecho.
 ##### R.I.02. Planes
 
 Como administrador,
-quiero disponer de la siguiente información sobre los planes: nombre (bronce, oro o platino), si incluye actividades dirigidas y si incluye entrenador personal,
-para conocer los servicios a los que da derecho cada plan.
+quiero que el plan contratado por cada socio sea uno de los tres que ofrece el centro: bronce, oro o platino,
+para conocer los servicios a los que tiene derecho cada socio.
+
+**Prueba de aceptación**
+
+- Se registra un socio con cada uno de los tres planes y aparece con su plan al consultar los socios.
+- No se permite registrar un socio con un plan distinto de bronce, oro o platino.
+- Los servicios de cada plan son fijos: el plan bronce da acceso a las instalaciones; el plan oro incluye además las actividades dirigidas; el plan platino incluye además la posibilidad de tener entrenador personal (véanse R.N.02 y R.N.07).
 
 **Prueba de aceptación**
 
