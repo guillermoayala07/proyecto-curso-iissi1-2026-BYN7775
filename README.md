@@ -563,7 +563,7 @@ para proteger los datos personales de socios y trabajadores.
 
 ### 5.1. Diagramas de clases UML
 
-- con restricciones.
+<img width="6624" height="4688" alt="Modelo Conceptual" src="https://github.com/user-attachments/assets/aea33815-22bf-4e85-9347-419018260578" />
 
 ### 5.2. Escenarios de prueba
 
