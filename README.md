@@ -274,12 +274,6 @@ para conocer los servicios a los que tiene derecho cada socio.
 - No se permite registrar un socio con un plan distinto de bronce, oro o platino.
 - Los servicios de cada plan son fijos: el plan bronce da acceso a las instalaciones; el plan oro incluye además las actividades dirigidas; el plan platino incluye además la posibilidad de tener entrenador personal (véanse R.N.02 y R.N.07).
 
-**Prueba de aceptación**
-
-- Existen exactamente tres planes: bronce, oro y platino.
-- El plan bronce no incluye actividades dirigidas ni entrenador personal; el plan oro incluye actividades dirigidas pero no entrenador personal; el plan platino incluye ambos.
-- No se permite crear dos planes con el mismo nombre.
-
 ##### R.I.03. Trabajadores
 
 Como director,
