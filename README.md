@@ -618,9 +618,6 @@ El estado es válido por estas razones:
 <img width="1097" height="783" alt="Captura de pantalla 2026-11-02 201059" src="https://github.com/user-attachments/assets/6efee617-68b8-430d-9c59-089f78a06759" />
 
 
-- con descripción textual y diagrama de objetos UML.
-
-
 
 ## 6. Matrices de trazabilidad
 
