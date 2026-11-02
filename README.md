@@ -557,7 +557,7 @@ para proteger los datos personales de socios y trabajadores.
 
 ### 5.1. Diagramas de clases UML
 
-<img width="6540" height="4688" alt="image" src="https://github.com/user-attachments/assets/e4d38e91-9ae5-4779-8f17-82658fedc32e" />
+<img width="6568" height="4704" alt="image" src="https://github.com/user-attachments/assets/b8859dd5-996e-4383-810f-978e13ea50fd" />
 
 ### 5.2. Escenarios de prueba
 
