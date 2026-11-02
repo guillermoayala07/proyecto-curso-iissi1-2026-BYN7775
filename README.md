@@ -597,6 +597,27 @@ El estado es válido por estas razones:
 <img width="1111" height="837" alt="Captura de pantalla 2026-11-02 195817" src="https://github.com/user-attachments/assets/f9ed60fc-da12-4a2f-a886-b9c42779be36" />
 
 
+# Escenario de prueba 2: Cambio a plan platino, entrenador personal y rutina (válido)
+
+## Descripción textual
+
+Valida R.I.01, R.I.02, R.I.03, R.I.09, R.I.10, R.I.11 y R.N.07.
+
+Ana, que era socia con plan oro, solicitó el 10/09/2026 el cambio a plan platino. El gestor Javier Molina tramitó la solicitud y quedó en estado aprobada. Ana ya figura con plan platino, por lo que puede tener entrenador personal. Se le asigna a la entrenadora Elena Vega, que el 20/09/2026 le diseña una rutina con tres ejercicios.
+
+El estado es válido por estas razones:
+
+* Ana tiene plan platino, condición necesaria para tener entrenador (R.N.07), y tiene un solo entrenador (0..1).
+
+* La rutina la diseña el entrenador asignado a esa socia.
+
+* La rutina está compuesta por sus ejercicios, todos con series y repeticiones mayores que cero.
+
+* La solicitud aprobada tiene gestor asociado.
+  
+<img width="1097" height="783" alt="Captura de pantalla 2026-11-02 201059" src="https://github.com/user-attachments/assets/6efee617-68b8-430d-9c59-089f78a06759" />
+
+
 - con descripción textual y diagrama de objetos UML.
 
 
