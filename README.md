@@ -498,8 +498,6 @@ Los requisitos generales (objetivos, o historias épicas) organizan jerárquicam
 
 ### 4.3. Requisitos no funcionales
 
-Describen aspectos de calidad del sistema (compatibilidad, fiabilidad, eficiencia, usabilidad y seguridad, según la clasificación de la norma ISO/IEC 25010).
-
 #### R.N.F.01. Funcionamiento en MariaDB
 
 Como director,
@@ -573,9 +571,9 @@ fechaSolicitud: cuando se realiza la solicitud.
 
 ### 5.2. Escenarios de prueba
 
-# Escenario de prueba 1: Reserva de plaza en sesiones de actividades dirigidas (válido)
+## Escenario de prueba 1: Reserva de plaza en sesiones de actividades dirigidas (válido)
 
-## Descripción textual
+### Descripción textual
 
 Valida R.I.01, R.I.02, R.I.03, R.I.04, R.I.05, R.I.06, R.I.07, R.N.01, R.N.02, R.N.03 y R.N.04.
 
@@ -592,14 +590,14 @@ El estado es válido por estas razones:
 - El monitor no tiene sesiones solapadas.
 - La sesión sin monitor es posible por la multiplicidad 0..1 de seAsigna.
 
-## Diagrama de objeto:
+### Diagrama de objeto:
 
 <img width="1111" height="837" alt="Captura de pantalla 2026-11-02 195817" src="https://github.com/user-attachments/assets/f9ed60fc-da12-4a2f-a886-b9c42779be36" />
 
 
-# Escenario de prueba 2: Cambio a plan platino, entrenador personal y rutina (válido)
+## Escenario de prueba 2: Cambio a plan platino, entrenador personal y rutina (válido)
 
-## Descripción textual
+### Descripción textual
 
 Valida R.I.01, R.I.02, R.I.03, R.I.09, R.I.10, R.I.11 y R.N.07.
 
