@@ -559,6 +559,18 @@ para proteger los datos personales de socios y trabajadores.
 
 <img width="6568" height="4704" alt="image" src="https://github.com/user-attachments/assets/b8859dd5-996e-4383-810f-978e13ea50fd" />
 
+####Aclaraciones del diagrama UML de VISOSPORT
+
+Los requisitos de Información se encentran apilados a la izquierda para mejorar la organización del diagrama, nótese que en su nombre queda explicito con que entidad se relaciona. 
+
+Fechas
+FechaReserva: cuándo se hizo la reserva, no cuándo se usa (importante no confundir con fecha de inicio de sesion).
+fechas de Sesión (fecha, horaInicio, horaFin): cuándo ocurren (fecha, inicio, fin).
+fechaAlta / fechaContratacion: entrada del socio / del trabajador.
+fechaInicio (entrenador): desde cuándo lo lleva; se actualiza al cambiar.
+fechaCreacion (Rutina): cuando se creo la rutina.
+fechaSolicitud: cuando se realiza la solicitud.
+
 ### 5.2. Escenarios de prueba
 
 - con descripción textual y diagrama de objetos UML.
