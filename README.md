@@ -44,8 +44,8 @@ Por un lado, que ofrezca a los socios una interfaz que permita reservar los serv
   3. Plan platino: Acceso a todas las instalaciones y actividades, con la posibilidad de contar con un entrenador personal.
 
 Por otro lado, que permita a los trabajadores asegurarse de un correcto desempeño de su función, más concretamente:
-  1. Administradores: asignan diariamente a cada monitor las actividades que le tocará dirigir, en un horario y una sala determinados. Además, registran directamente las altas de nuevos socios y tramitan las solicitudes de cambio de plan de los socios.
-  2. Monitores: revisan las asignaciones diarias impuestas por los administradores.
+  1. gestores: asignan diariamente a cada monitor las actividades que le tocará dirigir, en un horario y una sala determinados. Además, registran directamente las altas de nuevos socios y tramitan las solicitudes de cambio de plan de los socios.
+  2. Monitores: revisan las asignaciones diarias impuestas por los gestores.
   3. Entrenadores personales: diseñan y actualizan las rutinas de los socios con plan platino que tengan asignados.
      
 ## 2. Glosario de términos
@@ -53,12 +53,12 @@ Por otro lado, que permita a los trabajadores asegurarse de un correcto desempe�
 | Término | Definición | Multimedia |
 |---|---|---|
 | **Actividad dirigida** | Actividad deportiva impartida por un monitor en una instalación concreta, con horario y plazas limitadas (natación, aquagym, zumba, yoga, pádel, spinning, hyrox). Solo pueden realizarla socios con plan oro o platino. | <img width="150" alt="Actividad Deportiva" src="https://github.com/user-attachments/assets/9171e284-51a1-4ca7-9eef-2f1e5300aac2" /> |
-| **Administrador** | Trabajador del centro deportivo encargado de gestionar las asignaciones diarias a los monitores, registrar las altas de nuevos socios y tramitar las solicitudes de cambio de plan. | <img width="150" alt="Administrador" src="https://github.com/user-attachments/assets/f70ef0f9-aec9-408c-860f-ddf0eb7c7c13" /> |
+| **gestor** | Trabajador del centro deportivo encargado de gestionar las asignaciones diarias a los monitores, registrar las altas de nuevos socios y tramitar las solicitudes de cambio de plan. | <img width="150" alt="Administrador" src="https://github.com/user-attachments/assets/f70ef0f9-aec9-408c-860f-ddf0eb7c7c13" /> |
 | **Aforo** | Número máximo de personas que admite una instalación. En las sesiones, determina el número máximo de plazas reservables. | <img width="150" alt="Aforo" src="https://github.com/user-attachments/assets/22829f43-c039-4da2-a1b4-5b5c89802652" /> |
-| **Alta de socio** | Trámite por el que una persona pasa a ser socia del centro contratando un plan. Lo registra directamente un administrador en el sistema. | <img width="150" alt="Darse de alta" src="https://github.com/user-attachments/assets/c4550f5f-3e36-4d3d-b965-b6525d135d35" /> |
+| **Alta de socio** | Trámite por el que una persona pasa a ser socia del centro contratando un plan. Lo registra directamente un gestor en el sistema. | <img width="150" alt="Darse de alta" src="https://github.com/user-attachments/assets/c4550f5f-3e36-4d3d-b965-b6525d135d35" /> |
 | **Aquagym** | Actividad dirigida de ejercicio físico en el agua, que se imparte en la piscina. | <img width="150" alt="Aquagym" src="https://github.com/user-attachments/assets/6bf3a18d-b779-4cfe-ba7f-523a3d4817e9" /> |
-| **Asignación diaria** | Relación que establece un administrador entre un monitor y una sesión, indicando horario y sala. Cada monitor consulta sus asignaciones diarias. | <img width="150" alt="Asignacion diaria" src="https://github.com/user-attachments/assets/46cf7aeb-7875-4ade-a1b7-2b8639c90ace" /> |
-| **Cambio de plan** | Trámite por el que un socio solicita pasar a otro plan. Se materializa en una solicitud que tramita un administrador. | <img width="150" alt="Cambio de plan" src="https://github.com/user-attachments/assets/b3026d35-be0d-41f9-9aed-92689db0ca57" /> |
+| **Asignación diaria** | Relación que establece un gestor entre un monitor y una sesión, indicando horario y sala. Cada monitor consulta sus asignaciones diarias. | <img width="150" alt="Asignacion diaria" src="https://github.com/user-attachments/assets/46cf7aeb-7875-4ade-a1b7-2b8639c90ace" /> |
+| **Cambio de plan** | Trámite por el que un socio solicita pasar a otro plan. Se materializa en una solicitud que tramita un gestor. | <img width="150" alt="Cambio de plan" src="https://github.com/user-attachments/assets/b3026d35-be0d-41f9-9aed-92689db0ca57" /> |
 | **Director** | Responsable de VISOSPORT, que necesita tener centralizada la información de los trabajadores del centro. | <img width="150" alt="Director" src="https://github.com/user-attachments/assets/753bcc66-fcc2-486d-9d64-f6032b52c184" /> |
 | **Entrenador personal** | Trabajador que entrena individualmente a los socios con plan platino que tiene asignados. Diseña y actualiza sus rutinas. | <img width="150" alt="Entrenador personal" src="https://github.com/user-attachments/assets/e42b7f62-1ccd-401e-912e-3c63144553d8" /> |
 | **Entrenamiento personal** | Servicio de entrenamiento individualizado, con rutina propia, disponible solo para socios con plan platino. Se realiza en la sala de musculación. | <img width="150" alt="Entrenamiento personal" src="https://github.com/user-attachments/assets/be9dc857-22bc-4714-b678-06bcf89af6b3" /> |
@@ -85,7 +85,7 @@ Por otro lado, que permita a los trabajadores asegurarse de un correcto desempe�
 | **Sesión** | Celebración concreta de una actividad dirigida en una fecha, horario y sala determinados, con un monitor asignado y un número limitado de plazas. | <img width="150" alt="sesion" src="https://github.com/user-attachments/assets/fcc035b3-e639-46fc-8317-7e82dd1c4e5f" /> |
 | **Socio** | Cliente de VISOSPORT con un plan contratado. Consulta el horario de sesiones, reserva plaza, alquila pistas, solicita cambios de plan y, con plan platino, contrata un entrenador personal. | <img width="150" alt="Socio" src="https://github.com/user-attachments/assets/6469ad8b-feb9-41b5-944a-64c24d22d151" /> |
 | **Spinning** | Actividad dirigida de ciclismo indoor en grupo, con una bicicleta por asistente, que se imparte en la sala de cardio. | <img width="150" alt="spinning" src="https://github.com/user-attachments/assets/f11cc909-cb8f-4c05-b8fc-70c03816ec26" />|
-| **Trabajador** | Persona empleada en el centro: administrador, monitor o entrenador personal. | <img width="150" alt="Trabajador" src="https://github.com/user-attachments/assets/9a65aa24-1610-4dc2-95ec-e09bc3f00420" /> |
+| **Trabajador** | Persona empleada en el centro: gestor, monitor o entrenador personal. | <img width="150" alt="Trabajador" src="https://github.com/user-attachments/assets/9a65aa24-1610-4dc2-95ec-e09bc3f00420" /> |
 | **Uso libre** | Utilización por parte de los socios de las instalaciones fuera de las actividades dirigidas. El sistema no lo gestiona, salvo la reserva de pistas de pádel. | <img width="150" alt="uso libre" src="https://github.com/user-attachments/assets/b816ee28-7d33-4caf-be11-0a95596e73d0" /> |
 | **Yoga** | Actividad dirigida de ejercicios de postura, respiración y relajación, que se imparte en las salas multifuncionales. | <img width="150" alt="pexels-vickytm-29785336" src="https://github.com/user-attachments/assets/9051a4aa-77c9-40b8-9feb-0d28e075aa1c" /> |
 | **Zumba** | Actividad dirigida de baile y ejercicio aeróbico, que se imparte en las salas multifuncionales. | <img width="150" alt="pexels-katetrysh-4090012" src="https://github.com/user-attachments/assets/f5ea8c6f-c586-400e-b2b3-86fe961d60bc" /> |
@@ -97,14 +97,14 @@ El sistema de información de VISOSPORT centralizará la gestión del centro dep
 
 ### 3.1. Requisitos generales
 
-  1. **RG-1.** Como administrador, quiero gestionar los socios y sus planes, los trabajadores, las instalaciones, las actividades y la planificación de las sesiones, para que el centro funcione de forma organizada y sin solapamientos.
+  1. **RG-1.** Como gestor, quiero gestionar los socios y sus planes, los trabajadores, las instalaciones, las actividades y la planificación de las sesiones, para que el centro funcione de forma organizada y sin solapamientos.
   2. **RG-2.** Como monitor, quiero consultar las sesiones que tengo asignadas cada día, para saber qué actividad tengo que impartir, a qué hora y en qué sala.
   3. **RG-3.** Como entrenador personal, quiero gestionar las rutinas de los socios que tengo asignados, para hacer un seguimiento personalizado de su progreso.
   4. **RG-4.** Como socio, quiero reservar plaza en las actividades, alquilar pistas de pádel y, si mi plan lo permite, contratar un entrenador personal, para aprovechar los servicios que me ofrece mi plan.
      
 ### 3.2. Usuarios del sistema
 
-  1. Administrador: trabajador encargado de la gestión del centro. Programa las sesiones de las actividades dirigidas, asigna los monitores a cada sesión, gestiona las instalaciones y actividades, registra las altas de nuevos socios y tramita las solicitudes de cambio de plan.
+  1. gestor: trabajador encargado de la gestión del centro. Programa las sesiones de las actividades dirigidas, asigna los monitores a cada sesión, gestiona las instalaciones y actividades, registra las altas de nuevos socios y tramita las solicitudes de cambio de plan.
   2. Monitor: trabajador que imparte las actividades dirigidas. Consulta su agenda diaria con las sesiones que tiene asignadas, su horario, la sala y el número de socios apuntados.
   3. Entrenador personal: trabajador que entrena individualmente a los socios con plan platino que tiene asignados. Diseña y actualiza sus rutinas.
   4. Socio: cliente de VISOSPORT con un plan contratado. Consulta el horario de sesiones y reserva plaza en ellas, alquila pistas de pádel, solicita cambios de plan y, si tiene plan platino, contrata un entrenador personal y consulta su rutina.
@@ -145,7 +145,7 @@ para saber a qué voy a asistir y cuándo.
 
 #### R.F.03. Consultar la ocupación de una instalación
 
-Como administrador,
+Como gestor,
 quiero consultar el calendario de ocupación de una instalación en un día o rango de fechas, con sus sesiones y sus reservas de pista activas,
 para planificar nuevas sesiones sin solapamientos.
 
@@ -159,7 +159,7 @@ para planificar nuevas sesiones sin solapamientos.
 
 #### R.F.04. Listado de sesiones sin monitor
 
-Como administrador,
+Como gestor,
 quiero obtener un listado de las sesiones futuras que todavía no tienen monitor asignado,
 para asignarles un monitor a tiempo y evitar clases sin monitor.
 
@@ -224,7 +224,7 @@ para saber a quién entreno y qué rutina sigue cada uno.
 #### R.F.09. Listado de trabajadores
 
 Como director,
-quiero obtener un listado de los trabajadores del centro, filtrable por tipo (administrador, monitor o entrenador personal),
+quiero obtener un listado de los trabajadores del centro, filtrable por tipo (gestor, monitor o entrenador personal),
 para saber con qué personal cuento.
 
 **Prueba de aceptación**
@@ -235,7 +235,7 @@ para saber con qué personal cuento.
 
 #### R.F.10. Listado de solicitudes pendientes
 
-Como administrador,
+Como gestor,
 quiero obtener un listado de las solicitudes de cambio de plan que están pendientes de tramitar,
 para gestionarlas y que los socios sepan a qué servicios tienen derecho.
 
@@ -251,7 +251,7 @@ para gestionarlas y que los socios sepan a qué servicios tienen derecho.
 
 ##### R.I.01. Socios
 
-Como administrador,
+Como gestor,
 quiero disponer de la siguiente información sobre los socios: DNI, nombre, apellidos, correo electrónico, teléfono, fecha de alta y plan contratado,
 para gestionar a los socios del centro y saber a qué servicios tienen derecho.
 
@@ -264,7 +264,7 @@ para gestionar a los socios del centro y saber a qué servicios tienen derecho.
 
 ##### R.I.02. Planes
 
-Como administrador,
+Como gestor,
 quiero que el plan contratado por cada socio sea uno de los tres que ofrece el centro: bronce, oro o platino,
 para conocer los servicios a los que tiene derecho cada socio.
 
@@ -277,7 +277,7 @@ para conocer los servicios a los que tiene derecho cada socio.
 ##### R.I.03. Trabajadores
 
 Como director,
-quiero disponer de la siguiente información sobre los trabajadores: DNI, nombre, apellidos, correo electrónico, teléfono, fecha de contratación y tipo (administrador, monitor o entrenador personal),
+quiero disponer de la siguiente información sobre los trabajadores: DNI, nombre, apellidos, correo electrónico, teléfono, fecha de contratación y tipo (gestor, monitor o entrenador personal),
 para tener centralizada la información del personal.
 
 **Prueba de aceptación**
@@ -289,7 +289,7 @@ para tener centralizada la información del personal.
 
 ##### R.I.04. Instalaciones
 
-Como administrador,
+Como gestor,
 quiero disponer de la siguiente información sobre las instalaciones: nombre, tipo (sala de musculación, piscina, piscina de relajación, sala multifuncional, pista de pádel, sala de cardio o sala de Hyrox) y aforo máximo,
 para conocer la capacidad de cada espacio del centro.
 
@@ -301,7 +301,7 @@ para conocer la capacidad de cada espacio del centro.
 
 ##### R.I.05. Actividades dirigidas
 
-Como administrador,
+Como gestor,
 quiero disponer de la siguiente información sobre las actividades dirigidas: nombre, descripción y tipo de instalación en la que se imparte,
 para programar sesiones de cada actividad en la instalación adecuada.
 
@@ -313,7 +313,7 @@ para programar sesiones de cada actividad en la instalación adecuada.
 
 ##### R.I.06. Sesiones
 
-Como administrador,
+Como gestor,
 quiero disponer de la siguiente información sobre las sesiones: actividad, instalación, fecha, hora de inicio, hora de fin y, cuando ya se haya asignado, monitor,
 para planificar las clases del centro.
 
@@ -353,7 +353,7 @@ para poder jugar en la franja que he elegido.
 
 ##### R.I.09. Entrenador personal asignado
 
-Como administrador,
+Como gestor,
 quiero disponer de la información sobre el entrenador personal asignado a cada socio con plan platino: socio, entrenador y fecha de inicio de la asignación,
 para saber qué socios entrena cada entrenador personal.
 
@@ -379,14 +379,14 @@ para planificar el entrenamiento de cada socio y que este pueda consultarlo.
 
 ##### R.I.11. Solicitudes de cambio de plan
 
-Como administrador,
-quiero disponer de la siguiente información sobre las solicitudes de cambio de plan: socio solicitante, plan solicitado, fecha de la solicitud, estado (pendiente, aprobada o rechazada) y administrador que la tramita,
+Como gestor,
+quiero disponer de la siguiente información sobre las solicitudes de cambio de plan: socio solicitante, plan solicitado, fecha de la solicitud, estado (pendiente, aprobada o rechazada) y gestor que la tramita,
 para llevar un registro del estado de cada trámite.
 
 **Prueba de aceptación**
 
-- Se registra una solicitud nueva y queda en estado pendiente, sin administrador asignado.
-- Al tramitarla pasa a aprobada o rechazada y queda registrado el administrador que la tramitó.
+- Se registra una solicitud nueva y queda en estado pendiente, sin gestor asignado.
+- Al tramitarla pasa a aprobada o rechazada y queda registrado el gestor que la tramitó.
 - No se permite registrar una solicitud sin socio solicitante o plan solicitado.
 
 ---
@@ -395,7 +395,7 @@ para llevar un registro del estado de cada trámite.
 
 ##### R.N.01. Límite de plazas por sesión
 
-Como administrador,
+Como gestor,
 quiero que no se puedan registrar más reservas de plaza activas en una sesión que el aforo máximo de su instalación,
 para evitar la sobreocupación y los problemas de seguridad.
 
@@ -407,7 +407,7 @@ para evitar la sobreocupación y los problemas de seguridad.
 
 ##### R.N.02. Compatibilidad entre plan y actividad
 
-Como administrador,
+Como gestor,
 quiero que solo los socios con un plan que incluya actividades dirigidas (oro o platino) puedan reservar plaza en una sesión,
 para respetar las condiciones contratadas por cada socio.
 
@@ -419,7 +419,7 @@ para respetar las condiciones contratadas por cada socio.
 
 ##### R.N.03. No solapamiento de sesiones en una instalación
 
-Como administrador,
+Como gestor,
 quiero que una misma instalación no pueda tener dos sesiones que se solapen en el tiempo,
 para evitar conflictos de uso del espacio.
 
@@ -431,7 +431,7 @@ para evitar conflictos de uso del espacio.
 
 ##### R.N.04. No solapamiento de sesiones de un monitor
 
-Como administrador,
+Como gestor,
 quiero que un monitor no pueda estar asignado a dos sesiones que se solapen en el tiempo,
 para evitar que falte personal en alguna sesión.
 
@@ -471,7 +471,7 @@ para asegurarme de que no hay ninguna clase ni otra reserva en la franja que he 
 
 ##### R.N.07. Entrenador personal solo para el plan platino
 
-Como administrador,
+Como gestor,
 quiero que solo los socios con plan platino puedan tener un entrenador personal asignado,
 para respetar las condiciones contratadas por cada socio.
 
@@ -489,7 +489,7 @@ Los requisitos generales (objetivos, o historias épicas) organizan jerárquicam
 
 | Objetivo (requisito general) | Requisitos de información | Reglas de negocio | Requisitos funcionales |
 |---|---|---|---|
-| **RG-1.** Gestionar los socios y sus planes, los trabajadores, las instalaciones, las actividades y la planificación de las sesiones (administrador) | R.I.01 Socios<br>R.I.02 Planes<br>R.I.03 Trabajadores<br>R.I.04 Instalaciones<br>R.I.05 Actividades dirigidas<br>R.I.06 Sesiones<br>R.I.11 Solicitudes de cambio de plan | R.N.03 No solapamiento de sesiones en una instalación<br>R.N.04 No solapamiento de sesiones de un monitor<br>R.N.06 No solapamiento en las pistas de pádel<br>R.N.07 Entrenador personal solo para el plan platino | R.F.03 Consultar la ocupación de una instalación<br>R.F.04 Listado de sesiones sin monitor<br>R.F.09 Listado de trabajadores<br>R.F.10 Listado de solicitudes pendientes |
+| **RG-1.** Gestionar los socios y sus planes, los trabajadores, las instalaciones, las actividades y la planificación de las sesiones (gestor) | R.I.01 Socios<br>R.I.02 Planes<br>R.I.03 Trabajadores<br>R.I.04 Instalaciones<br>R.I.05 Actividades dirigidas<br>R.I.06 Sesiones<br>R.I.11 Solicitudes de cambio de plan | R.N.03 No solapamiento de sesiones en una instalación<br>R.N.04 No solapamiento de sesiones de un monitor<br>R.N.06 No solapamiento en las pistas de pádel<br>R.N.07 Entrenador personal solo para el plan platino | R.F.03 Consultar la ocupación de una instalación<br>R.F.04 Listado de sesiones sin monitor<br>R.F.09 Listado de trabajadores<br>R.F.10 Listado de solicitudes pendientes |
 | **RG-2.** Consultar las sesiones asignadas cada día (monitor) | R.I.06 Sesiones<br>R.I.07 Reservas de plaza | R.N.01 Límite de plazas por sesión<br>R.N.04 No solapamiento de sesiones de un monitor | R.F.05 Listado de socios con reserva en una sesión<br>R.F.06 Consultar mi agenda diaria |
 | **RG-3.** Gestionar las rutinas de los socios asignados (entrenador personal) | R.I.09 Entrenador personal asignado<br>R.I.10 Rutinas | R.N.07 Entrenador personal solo para el plan platino | R.F.07 Consultar mi rutina<br>R.F.08 Consultar mis socios asignados |
 | **RG-4.** Reservar plaza en las actividades, alquilar pistas de pádel y contratar un entrenador personal (socio) | R.I.07 Reservas de plaza<br>R.I.08 Reservas de pista<br>R.I.09 Entrenador personal asignado | R.N.01 Límite de plazas por sesión<br>R.N.02 Compatibilidad entre plan y actividad<br>R.N.05 Cancelación con antelación mínima<br>R.N.06 No solapamiento en las pistas de pádel<br>R.N.07 Entrenador personal solo para el plan platino | R.F.01 Consultar sesiones disponibles<br>R.F.02 Consultar mis reservas |
@@ -512,7 +512,7 @@ para poder instalarlo en la infraestructura del centro sin cambios.
 
 #### R.N.F.02. Operaciones completas o ninguna
 
-Como administrador,
+Como gestor,
 quiero que las operaciones de reserva y cancelación se realicen por completo o no se realicen en absoluto,
 para que nunca queden datos a medias ni inconsistentes.
 
@@ -523,7 +523,7 @@ para que nunca queden datos a medias ni inconsistentes.
 
 #### R.N.F.03. Mensajes de error comprensibles
 
-Como administrador,
+Como gestor,
 quiero que, cuando una operación sea rechazada por incumplir una regla de negocio, el sistema muestre un mensaje que indique el motivo,
 para saber qué debo corregir.
 
