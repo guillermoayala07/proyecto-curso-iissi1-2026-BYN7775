@@ -559,7 +559,7 @@ para proteger los datos personales de socios y trabajadores.
 
 <img width="6568" height="4704" alt="image" src="https://github.com/user-attachments/assets/b8859dd5-996e-4383-810f-978e13ea50fd" />
 
-####Aclaraciones del diagrama UML de VISOSPORT
+#### Aclaraciones del diagrama UML de VISOSPORT
 
 Los requisitos de Información se encentran apilados a la izquierda para mejorar la organización del diagrama, nótese que en su nombre queda explicito con que entidad se relaciona. 
 
