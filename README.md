@@ -573,7 +573,33 @@ fechaSolicitud: cuando se realiza la solicitud.
 
 ### 5.2. Escenarios de prueba
 
+# Escenario de prueba 1: Reserva de plaza en sesiones de actividades dirigidas (válido)
+
+## Descripción textual
+
+Valida R.I.01, R.I.02, R.I.03, R.I.04, R.I.05, R.I.06, R.I.07, R.N.01, R.N.02, R.N.03 y R.N.04.
+
+El 10/11/2026 se imparte la actividad Zumba (tipo de instalación: sala multifuncional) en la Sala Multifuncional 1, cuyo aforo máximo es 20. Hay dos sesiones consecutivas: la primera, de 18:00 a 19:00, tiene asignado al monitor Carlos Ruiz. La segunda, de 19:00 a 20:00, aún no tiene monitor.
+
+Lucía, con plan oro, tiene una reserva activa en la primera sesión.
+Pablo, con plan platino, tuvo una reserva en esa misma sesión, pero está cancelada.
+Marta, con plan bronce, no tiene ninguna reserva.
+
+El estado es válido por estas razones:
+- No supera el aforo (1 reserva activa de 20).
+- Ningún socio con plan bronce tiene reservas.
+- Las sesiones de la instalación no se solapan: la segunda empieza justo cuando termina la primera.
+- El monitor no tiene sesiones solapadas.
+- La sesión sin monitor es posible por la multiplicidad 0..1 de seAsigna.
+
+## Diagrama de objeto:
+
+<img width="1111" height="837" alt="Captura de pantalla 2026-11-02 195817" src="https://github.com/user-attachments/assets/f9ed60fc-da12-4a2f-a886-b9c42779be36" />
+
+
 - con descripción textual y diagrama de objetos UML.
+
+
 
 ## 6. Matrices de trazabilidad
 
