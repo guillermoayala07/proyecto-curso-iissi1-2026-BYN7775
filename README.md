@@ -619,18 +619,6 @@ El estado es válido por estas razones:
 
 ## 6. Matrices de trazabilidad
 
-- Matriz de trazabilidad entre los elementos del modelo conceptual y los requisitos.
-
-|       | EntidadX   | AsociaciónX  | RestricciónX  | Entidad2 ...   | 
-|:------|:-----------|:-----------|:-----------|:-----------|
-| RI-1  | X          | X          | X          | X          |
-| RI-2  |            | X          |            | X          |
-| RF-1  |            | X          |            | X          |
-| RF-2  | X          |            | X          | X          |
-| RN-1  |            | X          |            |            |
-| RN-2  | X          | X          | X          |            |
-| ...   |            |            |            |            |
-
 ### Matriz de Trazabilidad: Requisitos Funcionales
 
 |  | Personal | Gestor | gestiona | Solicitud | solicita | Socio | esAsignadaA | Rutina | Ejercicio | diseña | Entrenador | realiza | Reserva | seReserva | Sesion | seAsigna | Monitor | seRealiza | Actividad | seRealizaEn | Instalacion |
@@ -645,6 +633,34 @@ El estado es válido por estas razones:
 | **RF.08** | | | | | | X | X | X | | | X | | | | | X | | | | | |
 | **RF.09** | X | X | | | | | | | | | X | | | | | | X | | | | |
 | **RF.10** | | X | X | X | X | X | | | | | | | | | | | | | | | |
+
+### Matriz de Trazabilidad: Requisitos de Información
+
+| Req | Personal | Gestor | gestiona | Solicitud | solicita | Socio | esAsignadaA | Rutina | Ejercicio | diseña | Entrenador | realiza | Reserva | seReserva | Sesion | seAsigna | Monitor | seRealiza | Actividad | seRealizaEn | Instalacion |
+| :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+| **RI.01** | | | | | | X | | | | | | | | | | | | | | | |
+| **RI.02** | | | | | | X | | | | | | | | | | | | | | | |
+| **RI.03** | X | X | | | | | | | | | X | | | | | | X | | | | |
+| **RI.04** | | | | | | | | | | | | | | | | | | | | | X |
+| **RI.05** | | | | | | | | | | | | | | | | | | | X | | |
+| **RI.06** | | | | | | | | | | | | | | | X | X | X | X | X | X | X |
+| **RI.07** | | | | | | X | | | | | | X | X | X | X | | | | | | |
+| **RI.08** | | | | | | X | | | | | | X | X | X | X | | | | | X | X |
+| **RI.09** | | | | | | X | | | | | X | | | | | X | | | | | |
+| **RI.10** | | | | | | X | X | X | X | X | X | | | | | | | | | | |
+| **RI.11** | | X | X | X | X | X | | | | | | | | | | | | | | | |
+
+### Matriz de Trazabilidad: Reglas de Negocio
+
+| Req | Personal | Gestor | gestiona | Solicitud | solicita | Socio | esAsignadaA | Rutina | Ejercicio | diseña | Entrenador | realiza | Reserva | seReserva | Sesion | seAsigna | Monitor | seRealiza | Actividad | seRealizaEn | Instalacion |
+| :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+| **RN.01** | | | | | | | | | | | | | X | X | X | | | | | X | X |
+| **RN.02** | | | | | | X | | | | | | X | X | X | X | | | X | X | | |
+| **RN.03** | | | | | | | | | | | | | | | X | | | | | X | X |
+| **RN.04** | | | | | | | | | | | | | | | X | X | X | | | | |
+| **RN.05** | | | | | | | | | | | | | X | X | X | | | | | X | X |
+| **RN.06** | | | | | | | | | | | | | X | X | X | | | | | X | X |
+| **RN.07** | | | | | | X | | | | | X | | | | | X | | | | | |
 
 -- fin entregable 2 --
 
