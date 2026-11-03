@@ -114,8 +114,6 @@ El sistema de información de VISOSPORT centralizará la gestión del centro dep
 
 ### 4.1. Requisitos funcionales
 
-> Todos los requisitos funcionales de este entregable son listados y consultas.
-
 #### R.F.01. Consultar sesiones disponibles
 
 Como socio,
@@ -662,7 +660,6 @@ El estado es válido por estas razones:
 | **RN.06** | | | | | | | | | | | | | X | X | X | | | | | X | X |
 | **RN.07** | | | | | | X | | | | | X | | | | | X | | | | | |
 
--- fin entregable 2 --
 
 ## 7. Modelo relacional en 3FN
 
