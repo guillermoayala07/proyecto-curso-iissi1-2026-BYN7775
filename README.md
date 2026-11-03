@@ -631,6 +631,21 @@ El estado es válido por estas razones:
 | RN-2  | X          | X          | X          |            |
 | ...   |            |            |            |            |
 
+### Matriz de Trazabilidad: Requisitos Funcionales
+
+|  | Personal | Gestor | gestiona | Solicitud | solicita | Socio | esAsignadaA | Rutina | Ejercicio | diseña | Entrenador | realiza | Reserva | seReserva | Sesion | seAsigna | Monitor | seRealiza | Actividad | seRealizaEn | Instalacion |
+| :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+| **RF.01** | | | | | | X | | | | | | | X | X | X | X | X | X | X | X | X |
+| **RF.02** | | | | | | X | | | | | | X | X | X | X | | | | | X | X |
+| **RF.03** | | X | | | | | | | | | | | X | X | X | | | | | X | X |
+| **RF.04** | | X | | | | | | | | | | | | | X | X | X | | | | |
+| **RF.05** | | | | | | X | | | | | | X | X | X | X | | X | | | X | X |
+| **RF.06** | | | | | | | | | | | | | X | X | X | X | X | | | X | X |
+| **RF.07** | | | | | | X | X | X | X | X | X | | | | | | | | | | |
+| **RF.08** | | | | | | X | X | X | | | X | | | | | X | | | | | |
+| **RF.09** | X | X | | | | | | | | | X | | | | | | X | | | | |
+| **RF.10** | | X | X | X | X | X | | | | | | | | | | | | | | | |
+
 -- fin entregable 2 --
 
 ## 7. Modelo relacional en 3FN
